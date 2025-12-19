@@ -158,9 +158,9 @@ KALI_KEY_PATH=...       # SSH key path
 ## Citation
 
 ```bibtex
-@misc{sipit-security-agent-2024,
+@misc{sipit-security-agent-2025,
   title={Behavioral Consistency in Fine-Tuned LLMs: When Probing Doesn't Predict Performance},
-  year={2024},
+  year={2025},
   howpublished={GitHub}
 }
 ```
