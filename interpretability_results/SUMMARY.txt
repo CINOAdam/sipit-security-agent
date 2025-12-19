@@ -1,0 +1,74 @@
+
+================================================================================
+INTERPRETABILITY ANALYSIS SUMMARY
+================================================================================
+
+1. TRAINING DATA
+   - 54 chains collected across 5 skill types
+   - 6% overall success rate (not needed for pattern learning)
+   - Each skill has distinct behavioral signature
+
+2. SKILL SIGNATURES (Tool Usage Patterns)
+   ┌────────────────────┬─────────────────────────────────────────┐
+   │ Skill              │ Primary Tool(s)                         │
+   ├────────────────────┼─────────────────────────────────────────┤
+   │ Port Enumeration   │ nmap (96%)                              │
+   │ Web Scanning       │ nikto (100%)                            │
+   │ Dir Bruteforce     │ gobuster (72%), curl (25%)              │
+   │ Credential Testing │ curl (54%), nc (36%)                    │
+   │ API Enumeration    │ curl (53%), gobuster (28%)              │
+   └────────────────────┴─────────────────────────────────────────┘
+
+3. SKILL SIMILARITY ANALYSIS
+   - Port Enum ↔ Web Scan: 0.04 (highly distinct)
+   - Dir Brute ↔ API Enum: 0.71 (similar - both use curl/gobuster)
+   - Cred Test ↔ API Enum: 0.74 (similar - both use curl)
+
+4. MODEL PROBING RESULTS
+   ┌────────────────────┬──────────────┬───────────────┬──────────┐
+   │ Skill              │ Base Model   │ Fine-tuned    │ Δ        │
+   ├────────────────────┼──────────────┼───────────────┼──────────┤
+   │ Port Enumeration   │ 100%         │ 100%          │ 0%       │
+   │ Web Scanning       │ 100%         │ 100%          │ 0%       │
+   │ Dir Bruteforce     │ 100%         │ 100%          │ 0%       │
+   │ Credential Testing │ 0%           │ 100%          │ +100%    │
+   │ API Enumeration    │ 0%           │ 100%          │ +100%    │
+   ├────────────────────┼──────────────┼───────────────┼──────────┤
+   │ OVERALL            │ 60%          │ 100%          │ +40%     │
+   └────────────────────┴──────────────┴───────────────┴──────────┘
+
+5. KEY FINDINGS
+
+   a) SipIt training successfully encodes skill-specific patterns
+      - The fine-tuned model correctly differentiates ALL 5 skills
+      - Base model fails on non-obvious mappings (creds, API)
+
+   b) Pattern learning happens even from failed chains
+      - Only 6% success rate in training data
+      - Yet model learns correct tool associations
+      - Supports hypothesis: behavioral patterns > success signal
+
+   c) Skills form clusters based on tool usage
+      - Port/Web/Dir are distinct (different primary tools)
+      - Creds/API overlap (both curl-heavy)
+      - This predicts potential confusion between similar skills
+
+   d) First-tool selection is highly stereotyped
+      - Port: 100% start with nmap
+      - Web: 100% start with nikto
+      - Dir: 100% start with gobuster
+      - This is "skill fingerprinting" the model has learned
+
+6. INTERPRETABILITY IMPLICATIONS
+
+   The model appears to encode skills as:
+   - Tool selection circuits (which tool for which goal)
+   - Action sequence templates (stereotyped patterns)
+   - NOT deep reasoning (pattern matching dominant)
+
+   This aligns with the SipIt hypothesis:
+   - Models learn to imitate successful patterns
+   - Domain expertise = internalized action sequences
+   - Pattern matching precedes reasoning
+
+================================================================================

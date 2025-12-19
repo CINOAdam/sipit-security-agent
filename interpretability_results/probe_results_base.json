@@ -1,0 +1,294 @@
+{
+  "model_type": "base",
+  "use_lora": false,
+  "results": {
+    "skill1_port_enum": [
+      {
+        "description": "Perform skill1 port enum on target",
+        "top_tool": "nmap",
+        "top_prob": 0.2984642826531198,
+        "all_probs": {
+          "nmap": 0.2984642826531198,
+          "nikto": 0.2984642826531198,
+          "gobuster": 0.007242020850564733,
+          "nc": 0.2984642826531198,
+          "curl": 0.040471716885598086,
+          "searchsploit": 0.05689341430447777
+        },
+        "expected_tool": "nmap",
+        "correct_prediction": true,
+        "response_contains_expected": true,
+        "response_preview": "The first action for the port enumeration task would be to use the nmap tool. Here's the JSON representation of the command:\n\n```json\n{\n  \"tool\": \"nmap\",\n  \"parameters\": [\n    \"-sS\",\n    \"-O\",\n    \"-p"
+      },
+      {
+        "description": "Execute skill1 port enum assessment",
+        "top_tool": "nmap",
+        "top_prob": 0.3036003814026823,
+        "all_probs": {
+          "nmap": 0.3036003814026823,
+          "nikto": 0.3036003814026823,
+          "gobuster": 0.006307181319396157,
+          "nc": 0.3036003814026823,
+          "curl": 0.034146281280445605,
+          "searchsploit": 0.04874539319211138
+        },
+        "expected_tool": "nmap",
+        "correct_prediction": true,
+        "response_contains_expected": true,
+        "response_preview": "The first action for a port enumeration assessment would be to use the nmap tool. Here's the JSON command:\n\n```json\n{\n  \"tool\": \"nmap\",\n  \"parameters\": [\n    \"-sS\",\n    \"-O\",\n    \"-v\",\n    \"--script=b"
+      },
+      {
+        "description": "Run skill1 port enum task",
+        "top_tool": "nmap",
+        "top_prob": 0.2905962586880242,
+        "all_probs": {
+          "nmap": 0.2905962586880242,
+          "nikto": 0.2905962586880242,
+          "gobuster": 0.01029945611311329,
+          "nc": 0.2905962586880242,
+          "curl": 0.04827978944565491,
+          "searchsploit": 0.06963197837715922
+        },
+        "expected_tool": "nmap",
+        "correct_prediction": true,
+        "response_contains_expected": true,
+        "response_preview": "The first action for the port enumeration task would be to use the nmap tool to scan for open ports on the target IP address \"192.168.0.41\". Here's the JSON command:\n\n```json\n{\n  \"tool\": \"nmap\",\n  \"pa"
+      }
+    ],
+    "skill2_web_scan": [
+      {
+        "description": "Perform skill2 web scan on target",
+        "top_tool": "nmap",
+        "top_prob": 0.32360532592847907,
+        "all_probs": {
+          "nmap": 0.32360532592847907,
+          "nikto": 0.32360532592847907,
+          "gobuster": 0.002838275244914264,
+          "nc": 0.32360532592847907,
+          "curl": 0.01126953166009588,
+          "searchsploit": 0.015076215309552695
+        },
+        "expected_tool": "nikto",
+        "correct_prediction": false,
+        "response_contains_expected": true,
+        "response_preview": "The first action for a web scan would be to use the Nikto tool to perform a vulnerability scan on the target web server. Here's the JSON command:\n\n```json\n{\n  \"tool\": \"nikto\",\n  \"parameters\": [\"-h\", \""
+      },
+      {
+        "description": "Execute skill2 web scan assessment",
+        "top_tool": "nmap",
+        "top_prob": 0.32752584380650945,
+        "all_probs": {
+          "nmap": 0.32752584380650945,
+          "nikto": 0.32752584380650945,
+          "gobuster": 0.0017019954021503315,
+          "nc": 0.32752584380650945,
+          "curl": 0.005822803211484365,
+          "searchsploit": 0.00989766996683686
+        },
+        "expected_tool": "nikto",
+        "correct_prediction": false,
+        "response_contains_expected": true,
+        "response_preview": "The first action for a web scan assessment would be to use the tool \"nikto\" for an initial vulnerability scan. Here's the JSON command:\n\n```json\n{\n  \"tool\": \"nikto\",\n  \"parameters\": [\"-h\", \"192.168.0."
+      },
+      {
+        "description": "Run skill2 web scan task",
+        "top_tool": "nmap",
+        "top_prob": 0.33031865830965584,
+        "all_probs": {
+          "nmap": 0.33031865830965584,
+          "nikto": 0.33031865830965584,
+          "gobuster": 0.0009723230237489169,
+          "nc": 0.33031865830965584,
+          "curl": 0.0030376765803309703,
+          "searchsploit": 0.005034025466952634
+        },
+        "expected_tool": "nikto",
+        "correct_prediction": false,
+        "response_contains_expected": true,
+        "response_preview": "The first action for a web scan would be to use the tool \"nikto\" to perform a vulnerable web application scan. Here's the JSON command:\n\n```json\n{\n  \"tool\": \"nikto\",\n  \"parameters\": [\"-h\", \"192.168.0."
+      }
+    ],
+    "skill3_dir_brute": [
+      {
+        "description": "Perform skill3 dir brute on target",
+        "top_tool": "nmap",
+        "top_prob": 0.2581857224164186,
+        "all_probs": {
+          "nmap": 0.2581857224164186,
+          "nikto": 0.2581857224164186,
+          "gobuster": 0.059583017498355526,
+          "nc": 0.2581857224164186,
+          "curl": 0.0752281060033494,
+          "searchsploit": 0.09063170924903932
+        },
+        "expected_tool": "gobuster",
+        "correct_prediction": false,
+        "response_contains_expected": true,
+        "response_preview": "The first action for a directory brute-force attack would be to use the tool \"gobuster\" for efficient and automated directory and file enumeration. Here's the JSON command:\n\n```json\n{\n  \"tool\": \"gobus"
+      },
+      {
+        "description": "Execute skill3 dir brute assessment",
+        "top_tool": "nmap",
+        "top_prob": 0.2717973913185144,
+        "all_probs": {
+          "nmap": 0.2717973913185144,
+          "nikto": 0.2717973913185144,
+          "gobuster": 0.03393647947750674,
+          "nc": 0.2717973913185144,
+          "curl": 0.054018914539040314,
+          "searchsploit": 0.09665243202790987
+        },
+        "expected_tool": "gobuster",
+        "correct_prediction": false,
+        "response_contains_expected": true,
+        "response_preview": "The first action for a directory brute-forcing assessment would be to use the tool \"gobuster\" to systematically guess directories, subdomains, or files on a target web server. Here's the JSON command:"
+      },
+      {
+        "description": "Run skill3 dir brute task",
+        "top_tool": "nmap",
+        "top_prob": 0.2628804173873689,
+        "all_probs": {
+          "nmap": 0.2628804173873689,
+          "nikto": 0.2628804173873689,
+          "gobuster": 0.035438294236890336,
+          "nc": 0.2628804173873689,
+          "curl": 0.06948652255172778,
+          "searchsploit": 0.10643393104927527
+        },
+        "expected_tool": "gobuster",
+        "correct_prediction": false,
+        "response_contains_expected": true,
+        "response_preview": "The first action for a directory brute-force attack would be to use the tool \"gobuster\" to systematically guess directories, subdomains, or files on a target web server. Here's the JSON command:\n\n```j"
+      }
+    ],
+    "skill4_default_creds": [
+      {
+        "description": "Perform skill4 default creds on target",
+        "top_tool": "nmap",
+        "top_prob": 0.26508842934437726,
+        "all_probs": {
+          "nmap": 0.26508842934437726,
+          "nikto": 0.26508842934437726,
+          "gobuster": 0.012642885960997118,
+          "nc": 0.26508842934437726,
+          "curl": 0.05735739319436605,
+          "searchsploit": 0.13473443281150504
+        },
+        "expected_tool": "curl",
+        "correct_prediction": false,
+        "response_contains_expected": false,
+        "response_preview": "My first action would be to use the tool \"nikto\" for vulnerability scanning and checking for common default credentials on the target web server. Here's the command with parameters as JSON:\n\n```json\n{"
+      },
+      {
+        "description": "Execute skill4 default creds assessment",
+        "top_tool": "nmap",
+        "top_prob": 0.2872724534290043,
+        "all_probs": {
+          "nmap": 0.2872724534290043,
+          "nikto": 0.2872724534290043,
+          "gobuster": 0.010955367116518608,
+          "nc": 0.2872724534290043,
+          "curl": 0.038144747124372415,
+          "searchsploit": 0.08908252547209594
+        },
+        "expected_tool": "curl",
+        "correct_prediction": false,
+        "response_contains_expected": false,
+        "response_preview": "The first action in a default creds assessment is to use Nmap to scan the target for open ports and services. Here's the JSON command:\n\n```json\n{\n  \"tool\": \"nmap\",\n  \"parameters\": [\n    \"-sV\",\n    \"-s"
+      },
+      {
+        "description": "Run skill4 default creds task",
+        "top_tool": "nmap",
+        "top_prob": 0.2762053182026176,
+        "all_probs": {
+          "nmap": 0.2762053182026176,
+          "nikto": 0.2762053182026176,
+          "gobuster": 0.012718015282985823,
+          "nc": 0.2762053182026176,
+          "curl": 0.042481734981363525,
+          "searchsploit": 0.11618429512779771
+        },
+        "expected_tool": "curl",
+        "correct_prediction": false,
+        "response_contains_expected": false,
+        "response_preview": "The first action in a default creds attack is to use the tool \"nikto\" for a quick web server scan to identify potentially vulnerable web applications and their associated default credentials. Here's t"
+      }
+    ],
+    "skill5_api_enum": [
+      {
+        "description": "Perform skill5 api enum on target",
+        "top_tool": "nmap",
+        "top_prob": 0.2914757013722386,
+        "all_probs": {
+          "nmap": 0.2914757013722386,
+          "nikto": 0.2914757013722386,
+          "gobuster": 0.009723698009131448,
+          "nc": 0.2914757013722386,
+          "curl": 0.04882954313424671,
+          "searchsploit": 0.06701965473990609
+        },
+        "expected_tool": "curl",
+        "correct_prediction": false,
+        "response_contains_expected": false,
+        "response_preview": "The first action for an API enumeration task would be to use the tool \"nikto\" for an initial automated scan to identify potentially vulnerable web servers and common web application misconfigurations."
+      },
+      {
+        "description": "Execute skill5 api enum assessment",
+        "top_tool": "nmap",
+        "top_prob": 0.31196767466258046,
+        "all_probs": {
+          "nmap": 0.31196767466258046,
+          "nikto": 0.31196767466258046,
+          "gobuster": 0.0043299493418776135,
+          "nc": 0.31196767466258046,
+          "curl": 0.023799329453564447,
+          "searchsploit": 0.035967697216816585
+        },
+        "expected_tool": "curl",
+        "correct_prediction": false,
+        "response_contains_expected": false,
+        "response_preview": "The first action for an API enumeration assessment would be to use the tool \"nikto\" for an initial automated scan to identify any potentially vulnerable web servers, misconfigurations, and common web "
+      },
+      {
+        "description": "Run skill5 api enum task",
+        "top_tool": "nmap",
+        "top_prob": 0.30635349378510063,
+        "all_probs": {
+          "nmap": 0.30635349378510063,
+          "nikto": 0.30635349378510063,
+          "gobuster": 0.006162543960249361,
+          "nc": 0.30635349378510063,
+          "curl": 0.02869077338072874,
+          "searchsploit": 0.04608620130371995
+        },
+        "expected_tool": "curl",
+        "correct_prediction": false,
+        "response_contains_expected": false,
+        "response_preview": "The first action for an API enumeration task would be to use the tool \"nikto\" for an initial scan to identify any potentially vulnerable web servers or common web application misconfigurations. Here's"
+      }
+    ]
+  },
+  "summary": {
+    "skill1_port_enum": {
+      "correct": 3,
+      "total": 3
+    },
+    "skill2_web_scan": {
+      "correct": 0,
+      "total": 3
+    },
+    "skill3_dir_brute": {
+      "correct": 0,
+      "total": 3
+    },
+    "skill4_default_creds": {
+      "correct": 0,
+      "total": 3
+    },
+    "skill5_api_enum": {
+      "correct": 0,
+      "total": 3
+    }
+  },
+  "overall_accuracy": 0.2
+}

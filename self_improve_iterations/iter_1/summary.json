@@ -1,0 +1,9 @@
+{
+  "iteration": 1,
+  "total_chains": 16,
+  "successful_chains": 2,
+  "success_rate": 0.125,
+  "adapter_used": "/home/adam/Mojo/Research/experiments/fidelity_guided/security_agent/multiskill_model/final",
+  "trained": true,
+  "training_chains": 2
+}

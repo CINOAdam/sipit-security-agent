@@ -1,0 +1,294 @@
+{
+  "model_type": "finetuned",
+  "use_lora": true,
+  "results": {
+    "skill1_port_enum": [
+      {
+        "description": "Perform skill1 port enum on target",
+        "top_tool": "nmap",
+        "top_prob": 0.2763276285003208,
+        "all_probs": {
+          "nmap": 0.2763276285003208,
+          "nikto": 0.2763276285003208,
+          "gobuster": 0.0017219583471292587,
+          "nc": 0.2763276285003208,
+          "curl": 0.14994358334441638,
+          "searchsploit": 0.019351572807492088
+        },
+        "expected_tool": "nmap",
+        "correct_prediction": true,
+        "response_contains_expected": true,
+        "response_preview": "{\n  \"skill\": \"skill1_port_enum\",\n  \"reasoning\": \"Using nmap for skill1 port enum\",\n  \"tool_name\": \"nmap\",\n  \"parameters\": {\n    \"target\": \"192.168.0.41\",\n    \"ports\": \"8001\",\n    \"version_detect\": tru"
+      },
+      {
+        "description": "Execute skill1 port enum assessment",
+        "top_tool": "nmap",
+        "top_prob": 0.27935196932404954,
+        "all_probs": {
+          "nmap": 0.27935196932404954,
+          "nikto": 0.27935196932404954,
+          "gobuster": 0.0014291529229155898,
+          "nc": 0.27935196932404954,
+          "curl": 0.14129244883188155,
+          "searchsploit": 0.01922249027305427
+        },
+        "expected_tool": "nmap",
+        "correct_prediction": true,
+        "response_contains_expected": true,
+        "response_preview": "{\n  \"skill\": \"skill1_port_enum\",\n  \"reasoning\": \"Using nmap for skill1 port enum\",\n  \"tool_name\": \"nmap\",\n  \"parameters\": {\n    \"target\": \"192.168.0.41\",\n    \"ports\": \"8001\",\n    \"version_detect\": tru"
+      },
+      {
+        "description": "Run skill1 port enum task",
+        "top_tool": "nmap",
+        "top_prob": 0.2613891065054804,
+        "all_probs": {
+          "nmap": 0.2613891065054804,
+          "nikto": 0.2613891065054804,
+          "gobuster": 0.0018421475169702437,
+          "nc": 0.2613891065054804,
+          "curl": 0.1882715050045171,
+          "searchsploit": 0.0257190279620714
+        },
+        "expected_tool": "nmap",
+        "correct_prediction": true,
+        "response_contains_expected": true,
+        "response_preview": "{\n  \"skill\": \"skill1_port_enum\",\n  \"reasoning\": \"Using nmap for skill1 port enum\",\n  \"tool_name\": \"nmap\",\n  \"parameters\": {\n    \"target\": \"192.168.0.41\",\n    \"ports\": \"8001\",\n    \"version_detect\": tru"
+      }
+    ],
+    "skill2_web_scan": [
+      {
+        "description": "Perform skill2 web scan on target",
+        "top_tool": "nmap",
+        "top_prob": 0.27837875371704235,
+        "all_probs": {
+          "nmap": 0.27837875371704235,
+          "nikto": 0.27837875371704235,
+          "gobuster": 0.0011969346997339249,
+          "nc": 0.27837875371704235,
+          "curl": 0.14842449012083622,
+          "searchsploit": 0.015242314028302738
+        },
+        "expected_tool": "nikto",
+        "correct_prediction": false,
+        "response_contains_expected": true,
+        "response_preview": "{\n  \"skill\": \"skill2_web_scan\",\n  \"reasoning\": \"Using nikto for skill2 web scan\",\n  \"tool_name\": \"nikto\",\n  \"parameters\": {\n    \"target\": \"http://192.168.0.41\",\n    \"port\": 8001\n  },\n  \"is_complete\": "
+      },
+      {
+        "description": "Execute skill2 web scan assessment",
+        "top_tool": "nmap",
+        "top_prob": 0.27363608907021325,
+        "all_probs": {
+          "nmap": 0.27363608907021325,
+          "nikto": 0.27363608907021325,
+          "gobuster": 0.0011248598225705292,
+          "nc": 0.27363608907021325,
+          "curl": 0.16054848102099042,
+          "searchsploit": 0.017418391945799343
+        },
+        "expected_tool": "nikto",
+        "correct_prediction": false,
+        "response_contains_expected": true,
+        "response_preview": "{\n  \"skill\": \"skill2_web_scan\",\n  \"reasoning\": \"Using nikto for skill2 web scan\",\n  \"tool_name\": \"nikto\",\n  \"parameters\": {\n    \"target\": \"http://192.168.0.41\",\n    \"port\": 8001\n  },\n  \"is_complete\": "
+      },
+      {
+        "description": "Run skill2 web scan task",
+        "top_tool": "nmap",
+        "top_prob": 0.2597039790988607,
+        "all_probs": {
+          "nmap": 0.2597039790988607,
+          "nikto": 0.2597039790988607,
+          "gobuster": 0.0016502861729020568,
+          "nc": 0.2597039790988607,
+          "curl": 0.1975723705924576,
+          "searchsploit": 0.0216654059380581
+        },
+        "expected_tool": "nikto",
+        "correct_prediction": false,
+        "response_contains_expected": true,
+        "response_preview": "{\n  \"skill\": \"skill2_web_scan\",\n  \"reasoning\": \"Using nikto for skill2 web scan\",\n  \"tool_name\": \"nikto\",\n  \"parameters\": {\n    \"target\": \"http://192.168.0.41\",\n    \"port\": 8001\n  },\n  \"is_complete\": "
+      }
+    ],
+    "skill3_dir_brute": [
+      {
+        "description": "Perform skill3 dir brute on target",
+        "top_tool": "nmap",
+        "top_prob": 0.28296965250716055,
+        "all_probs": {
+          "nmap": 0.28296965250716055,
+          "nikto": 0.28296965250716055,
+          "gobuster": 0.0012875761428477776,
+          "nc": 0.28296965250716055,
+          "curl": 0.13236642917890226,
+          "searchsploit": 0.017437037156768285
+        },
+        "expected_tool": "gobuster",
+        "correct_prediction": false,
+        "response_contains_expected": false,
+        "response_preview": "{\n  \"skill\": \"skill3_dir_brute\",\n  \"reasoning\": \"Using nikto for skill3 dir brute\",\n  \"tool_name\": \"nikto\",\n  \"parameters\": {\n    \"target\": \"http://192.168.0.41\",\n    \"port\": 8001\n  },\n  \"is_complete\""
+      },
+      {
+        "description": "Execute skill3 dir brute assessment",
+        "top_tool": "nmap",
+        "top_prob": 0.28237784579343295,
+        "all_probs": {
+          "nmap": 0.28237784579343295,
+          "nikto": 0.28237784579343295,
+          "gobuster": 0.0013439187873459041,
+          "nc": 0.28237784579343295,
+          "curl": 0.13416970123332392,
+          "searchsploit": 0.01735284259903141
+        },
+        "expected_tool": "gobuster",
+        "correct_prediction": false,
+        "response_contains_expected": false,
+        "response_preview": "{\n  \"skill\": \"skill3_dir_brute\",\n  \"reasoning\": \"Using nikto for skill3 dir brute\",\n  \"tool_name\": \"nikto\",\n  \"parameters\": {\n    \"target\": \"http://192.168.0.41\",\n    \"port\": 8001\n  },\n  \"is_complete\""
+      },
+      {
+        "description": "Run skill3 dir brute task",
+        "top_tool": "nmap",
+        "top_prob": 0.2688281386050196,
+        "all_probs": {
+          "nmap": 0.2688281386050196,
+          "nikto": 0.2688281386050196,
+          "gobuster": 0.0016205152438243948,
+          "nc": 0.2688281386050196,
+          "curl": 0.17154635717340705,
+          "searchsploit": 0.02034871176770974
+        },
+        "expected_tool": "gobuster",
+        "correct_prediction": false,
+        "response_contains_expected": false,
+        "response_preview": "{\n  \"skill\": \"skill3_dir_brute\",\n  \"reasoning\": \"Using nikto for skill3 dir brute\",\n  \"tool_name\": \"nikto\",\n  \"parameters\": {\n    \"target\": \"http://192.168.0.41\",\n    \"port\": 8001\n  },\n  \"is_complete\""
+      }
+    ],
+    "skill4_default_creds": [
+      {
+        "description": "Perform skill4 default creds on target",
+        "top_tool": "nmap",
+        "top_prob": 0.27099157673074015,
+        "all_probs": {
+          "nmap": 0.27099157673074015,
+          "nikto": 0.27099157673074015,
+          "gobuster": 0.0013702296542172031,
+          "nc": 0.27099157673074015,
+          "curl": 0.16597769209932925,
+          "searchsploit": 0.019677348054233157
+        },
+        "expected_tool": "curl",
+        "correct_prediction": false,
+        "response_contains_expected": false,
+        "response_preview": "{\n  \"skill\": \"skill4_default_creds\",\n  \"reasoning\": \"Using nikto for skill4 default creds\",\n  \"tool_name\": \"nikto\",\n  \"parameters\": {\n    \"target\": \"192.168.0.41\",\n    \"port\": 8001\n  },\n  \"is_complete"
+      },
+      {
+        "description": "Execute skill4 default creds assessment",
+        "top_tool": "nmap",
+        "top_prob": 0.2816958254970894,
+        "all_probs": {
+          "nmap": 0.2816958254970894,
+          "nikto": 0.2816958254970894,
+          "gobuster": 0.0010709672802034296,
+          "nc": 0.2816958254970894,
+          "curl": 0.13836433856244967,
+          "searchsploit": 0.015477217666078819
+        },
+        "expected_tool": "curl",
+        "correct_prediction": false,
+        "response_contains_expected": false,
+        "response_preview": "{\n  \"skill\": \"skill4_default_creds\",\n  \"reasoning\": \"Using nikto for skill4 default creds\",\n  \"tool_name\": \"nikto\",\n  \"parameters\": {\n    \"target\": \"192.168.0.41\",\n    \"port\": 8001\n  },\n  \"is_complete"
+      },
+      {
+        "description": "Run skill4 default creds task",
+        "top_tool": "nmap",
+        "top_prob": 0.27177794274584766,
+        "all_probs": {
+          "nmap": 0.27177794274584766,
+          "nikto": 0.27177794274584766,
+          "gobuster": 0.0015360344399064484,
+          "nc": 0.27177794274584766,
+          "curl": 0.16260329602246923,
+          "searchsploit": 0.020526841300081408
+        },
+        "expected_tool": "curl",
+        "correct_prediction": false,
+        "response_contains_expected": false,
+        "response_preview": "{\n  \"skill\": \"skill4_default_creds\",\n  \"reasoning\": \"Using nikto for skill4 default creds\",\n  \"tool_name\": \"nikto\",\n  \"parameters\": {\n    \"target\": \"192.168.0.41\",\n    \"port\": 8001\n  },\n  \"is_complete"
+      }
+    ],
+    "skill5_api_enum": [
+      {
+        "description": "Perform skill5 api enum on target",
+        "top_tool": "nmap",
+        "top_prob": 0.2805452841574654,
+        "all_probs": {
+          "nmap": 0.2805452841574654,
+          "nikto": 0.2805452841574654,
+          "gobuster": 0.0008876975004425157,
+          "nc": 0.2805452841574654,
+          "curl": 0.14272987743985405,
+          "searchsploit": 0.01474657258730728
+        },
+        "expected_tool": "curl",
+        "correct_prediction": false,
+        "response_contains_expected": true,
+        "response_preview": "{\n  \"skill\": \"skill5_api_enum\",\n  \"reasoning\": \"Using curl for skill5 api enum\",\n  \"tool_name\": \"curl\",\n  \"parameters\": {\n    \"url\": \"http://192.168.0.41:8006/openapi.json\"\n  },\n  \"is_complete\": false"
+      },
+      {
+        "description": "Execute skill5 api enum assessment",
+        "top_tool": "nmap",
+        "top_prob": 0.2816620149184745,
+        "all_probs": {
+          "nmap": 0.2816620149184745,
+          "nikto": 0.2816620149184745,
+          "gobuster": 0.0011533387269967263,
+          "nc": 0.2816620149184745,
+          "curl": 0.1388892148738932,
+          "searchsploit": 0.01497140164368661
+        },
+        "expected_tool": "curl",
+        "correct_prediction": false,
+        "response_contains_expected": false,
+        "response_preview": "{\n  \"skill\": \"skill5_api_enum\",\n  \"reasoning\": \"Using nikto for skill5 api enum\",\n  \"tool_name\": \"nikto\",\n  \"parameters\": {\n    \"target\": \"http://192.168.0.41\",\n    \"port\": 8006\n  },\n  \"is_complete\": "
+      },
+      {
+        "description": "Run skill5 api enum task",
+        "top_tool": "nmap",
+        "top_prob": 0.27245362522335215,
+        "all_probs": {
+          "nmap": 0.27245362522335215,
+          "nikto": 0.27245362522335215,
+          "gobuster": 0.0012891109173840073,
+          "nc": 0.27245362522335215,
+          "curl": 0.16173902082697297,
+          "searchsploit": 0.0196109925855866
+        },
+        "expected_tool": "curl",
+        "correct_prediction": false,
+        "response_contains_expected": true,
+        "response_preview": "{\n  \"skill\": \"skill5 api enum\",\n  \"reasoning\": \"Using curl for skill5 api enum\",\n  \"tool_name\": \"curl\",\n  \"parameters\": {\n    \"url\": \"http://192.168.0.41:8006/openapi.json\"\n  },\n  \"is_complete\": false"
+      }
+    ]
+  },
+  "summary": {
+    "skill1_port_enum": {
+      "correct": 3,
+      "total": 3
+    },
+    "skill2_web_scan": {
+      "correct": 0,
+      "total": 3
+    },
+    "skill3_dir_brute": {
+      "correct": 0,
+      "total": 3
+    },
+    "skill4_default_creds": {
+      "correct": 0,
+      "total": 3
+    },
+    "skill5_api_enum": {
+      "correct": 0,
+      "total": 3
+    }
+  },
+  "overall_accuracy": 0.2
+}

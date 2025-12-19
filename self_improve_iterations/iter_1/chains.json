@@ -1,0 +1,530 @@
+[
+  {
+    "goal_id": "si_ports_1",
+    "goal_description": "Enumerate open ports and services on DVWA",
+    "target_ip": "192.168.0.41",
+    "skill": "skill1_port_enum",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "options": "-sV -p 8001"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "options": "-sV -p 8001"
+        }
+      },
+      {
+        "step": 2,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "options": "-sV -p 8001"
+        }
+      }
+    ],
+    "success": false
+  },
+  {
+    "goal_id": "si_ports_1",
+    "goal_description": "Enumerate open ports and services on DVWA",
+    "target_ip": "192.168.0.41",
+    "skill": "skill1_port_enum",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "options": "-sV -p 8001"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "options": "-sV -p 8001"
+        }
+      },
+      {
+        "step": 2,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "options": "-sV -p 8001"
+        }
+      }
+    ],
+    "success": false
+  },
+  {
+    "goal_id": "si_ports_2",
+    "goal_description": "Scan Juice Shop for open ports",
+    "target_ip": "192.168.0.41",
+    "skill": "skill1_port_enum",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "options": "-sV -p 8002"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "options": "-sV -p 8002"
+        }
+      },
+      {
+        "step": 2,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "options": "-sV -p 8002"
+        }
+      }
+    ],
+    "success": false
+  },
+  {
+    "goal_id": "si_ports_2",
+    "goal_description": "Scan Juice Shop for open ports",
+    "target_ip": "192.168.0.41",
+    "skill": "skill1_port_enum",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "options": "-sV -p 8002"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "options": "-sV -p 8002"
+        }
+      },
+      {
+        "step": 2,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "options": "-sV -p 8002"
+        }
+      }
+    ],
+    "success": false
+  },
+  {
+    "goal_id": "si_webscan_1",
+    "goal_description": "Scan DVWA for web vulnerabilities using nikto",
+    "target_ip": "192.168.0.41",
+    "skill": "skill2_web_scan",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "options": "-sV -p 8001"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "options": "-sV -p 8001"
+        }
+      },
+      {
+        "step": 2,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "options": "-sV -p 8001"
+        }
+      }
+    ],
+    "success": false
+  },
+  {
+    "goal_id": "si_webscan_1",
+    "goal_description": "Scan DVWA for web vulnerabilities using nikto",
+    "target_ip": "192.168.0.41",
+    "skill": "skill2_web_scan",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "options": "-sV -p 8001"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "options": "-sV -p 8001"
+        }
+      },
+      {
+        "step": 2,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "options": "-sV -p 8001"
+        }
+      }
+    ],
+    "success": false
+  },
+  {
+    "goal_id": "si_webscan_2",
+    "goal_description": "Perform web vulnerability scan on bWAPP",
+    "target_ip": "192.168.0.41",
+    "skill": "skill2_web_scan",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "options": "-sV -p 8003"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "options": "-sV -p 8003"
+        }
+      },
+      {
+        "step": 2,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "options": "-sV -p 8003"
+        }
+      }
+    ],
+    "success": false
+  },
+  {
+    "goal_id": "si_webscan_2",
+    "goal_description": "Perform web vulnerability scan on bWAPP",
+    "target_ip": "192.168.0.41",
+    "skill": "skill2_web_scan",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "options": "-sV -p 8003"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "options": "-sV -p 8003"
+        }
+      },
+      {
+        "step": 2,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "options": "-sV -p 8003"
+        }
+      }
+    ],
+    "success": false
+  },
+  {
+    "goal_id": "si_dirs_1",
+    "goal_description": "Discover hidden directories on DVWA using gobuster",
+    "target_ip": "192.168.0.41",
+    "skill": "skill3_dir_brute",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "options": "-sV -p 8001"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "options": "-sV -p 8001"
+        }
+      },
+      {
+        "step": 2,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "options": "-sV -p 8001"
+        }
+      }
+    ],
+    "success": false
+  },
+  {
+    "goal_id": "si_dirs_1",
+    "goal_description": "Discover hidden directories on DVWA using gobuster",
+    "target_ip": "192.168.0.41",
+    "skill": "skill3_dir_brute",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "options": "-sV -p 8001"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "options": "-sV -p 8001"
+        }
+      },
+      {
+        "step": 2,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "options": "-sV -p 8001"
+        }
+      }
+    ],
+    "success": false
+  },
+  {
+    "goal_id": "si_creds_1",
+    "goal_description": "Test default FTP credentials on Metasploitable",
+    "target_ip": "192.168.0.41",
+    "skill": "skill4_default_creds",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "options": "-sV -p 8021"
+        }
+      }
+    ],
+    "success": true
+  },
+  {
+    "goal_id": "si_creds_1",
+    "goal_description": "Test default FTP credentials on Metasploitable",
+    "target_ip": "192.168.0.41",
+    "skill": "skill4_default_creds",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "options": "-sV -p 8021"
+        }
+      }
+    ],
+    "success": true
+  },
+  {
+    "goal_id": "si_api_1",
+    "goal_description": "Enumerate REST API endpoints on VAmPI",
+    "target_ip": "192.168.0.41",
+    "skill": "skill5_api_enum",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "options": "-sV -p 8008"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "options": "-sV -p 8008"
+        }
+      },
+      {
+        "step": 2,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "options": "-sV -p 8008"
+        }
+      },
+      {
+        "step": 3,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "options": "-sV -p 8008"
+        }
+      }
+    ],
+    "success": false
+  },
+  {
+    "goal_id": "si_api_1",
+    "goal_description": "Enumerate REST API endpoints on VAmPI",
+    "target_ip": "192.168.0.41",
+    "skill": "skill5_api_enum",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "options": "-sV -p 8008"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "options": "-sV -p 8008"
+        }
+      },
+      {
+        "step": 2,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "options": "-sV -p 8008"
+        }
+      },
+      {
+        "step": 3,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "options": "-sV -p 8008"
+        }
+      }
+    ],
+    "success": false
+  },
+  {
+    "goal_id": "si_api_2",
+    "goal_description": "Discover API documentation on Juice Shop",
+    "target_ip": "192.168.0.41",
+    "skill": "skill5_api_enum",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "options": "-sV -p 8002"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "options": "-sV -p 8002"
+        }
+      },
+      {
+        "step": 2,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "options": "-sV -p 8002"
+        }
+      },
+      {
+        "step": 3,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "options": "-sV -p 8002"
+        }
+      }
+    ],
+    "success": false
+  },
+  {
+    "goal_id": "si_api_2",
+    "goal_description": "Discover API documentation on Juice Shop",
+    "target_ip": "192.168.0.41",
+    "skill": "skill5_api_enum",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "options": "-sV -p 8002"
+        }
+      },
+      {
+        "step": 1,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "options": "-sV -p 8002"
+        }
+      },
+      {
+        "step": 2,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "options": "-sV -p 8002"
+        }
+      },
+      {
+        "step": 3,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "options": "-sV -p 8002"
+        }
+      }
+    ],
+    "success": false
+  }
+]

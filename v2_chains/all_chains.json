@@ -1,0 +1,309 @@
+[
+  {
+    "goal_id": "juice_enum",
+    "goal_description": "Enumerate Juice Shop to find API endpoints and vulnerabilities",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "8002",
+          "scan_type": "sC",
+          "version_detect": true
+        },
+        "success": true
+      },
+      {
+        "step": 1,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41:8002"
+        },
+        "success": true
+      }
+    ],
+    "success": true,
+    "duration_seconds": 218.103899
+  },
+  {
+    "goal_id": "juice_enum",
+    "goal_description": "Enumerate Juice Shop to find API endpoints and vulnerabilities",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41:8002"
+        },
+        "success": true
+      },
+      {
+        "step": 1,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8002",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "8002",
+          "scripts": "http-enum"
+        },
+        "success": true
+      }
+    ],
+    "success": true,
+    "duration_seconds": 80.74724
+  },
+  {
+    "goal_id": "juice_enum",
+    "goal_description": "Enumerate Juice Shop to find API endpoints and vulnerabilities",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8002",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "8002",
+          "scripts": "http-enum,http-vuln-*"
+        },
+        "success": true
+      },
+      {
+        "step": 2,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41:8002"
+        },
+        "success": true
+      }
+    ],
+    "success": true,
+    "duration_seconds": 87.247956
+  },
+  {
+    "goal_id": "dvwa_enum",
+    "goal_description": "Enumerate DVWA to identify all attack surfaces",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "8001",
+          "scan_type": "sV",
+          "scripts": "default",
+          "version_detect": true
+        },
+        "success": true
+      },
+      {
+        "step": 1,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41",
+          "port": 8001
+        },
+        "success": false
+      }
+    ],
+    "success": true,
+    "duration_seconds": 193.150171
+  },
+  {
+    "goal_id": "dvwa_enum",
+    "goal_description": "Enumerate DVWA to identify all attack surfaces",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "8001",
+          "scan_type": "sV"
+        },
+        "success": true
+      },
+      {
+        "step": 1,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41",
+          "port": 8001
+        },
+        "success": false
+      }
+    ],
+    "success": true,
+    "duration_seconds": 8.98636
+  },
+  {
+    "goal_id": "dvwa_enum",
+    "goal_description": "Enumerate DVWA to identify all attack surfaces",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "8001",
+          "scan_type": "-sV -sC"
+        },
+        "success": true
+      },
+      {
+        "step": 1,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41",
+          "port": 8001
+        },
+        "success": false
+      }
+    ],
+    "success": true,
+    "duration_seconds": 19.833763
+  },
+  {
+    "goal_id": "vampi_enum",
+    "goal_description": "Enumerate VAmPI REST API to find endpoints",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41",
+          "port": 8008
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8008/api/"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8008/",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 3,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8008/",
+          "wordlist": "/usr/share/wordlists/api/api-endpoints.txt",
+          "extensions": "json,xml",
+          "threads": 10
+        },
+        "success": false
+      },
+      {
+        "step": 4,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8008/api/",
+          "headers": null
+        },
+        "success": false
+      },
+      {
+        "step": 5,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8008/swagger.json"
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 953.46881
+  },
+  {
+    "goal_id": "vampi_enum",
+    "goal_description": "Enumerate VAmPI REST API to find endpoints",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "8008",
+          "scan_type": "sT",
+          "scripts": "default",
+          "version_detect": true
+        },
+        "success": true
+      },
+      {
+        "step": 1,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41",
+          "port": 8008
+        },
+        "success": false
+      }
+    ],
+    "success": true,
+    "duration_seconds": 138.677713
+  },
+  {
+    "goal_id": "vampi_enum",
+    "goal_description": "Enumerate VAmPI REST API to find endpoints",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "8008",
+          "version_detect": true
+        },
+        "success": true
+      },
+      {
+        "step": 1,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41",
+          "port": 8008
+        },
+        "success": false
+      }
+    ],
+    "success": true,
+    "duration_seconds": 15.956425
+  }
+]

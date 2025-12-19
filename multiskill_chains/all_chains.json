@@ -1,0 +1,1937 @@
+[
+  {
+    "skill": "skill1_port_enum",
+    "goal_id": "skill1_dvwa_ports",
+    "goal_description": "Enumerate open ports and services on DVWA server",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "8001",
+          "version_detect": true
+        },
+        "success": true
+      },
+      {
+        "step": 1,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "1-65535",
+          "version_detect": true
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 446.725837
+  },
+  {
+    "skill": "skill1_port_enum",
+    "goal_id": "skill1_dvwa_ports",
+    "goal_description": "Enumerate open ports and services on DVWA server",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "8001",
+          "version_detect": true
+        },
+        "success": true
+      },
+      {
+        "step": 1,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "1-1000",
+          "version_detect": true
+        },
+        "success": true
+      },
+      {
+        "step": 2,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "1001-65535",
+          "version_detect": true
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 508.92777
+  },
+  {
+    "skill": "skill1_port_enum",
+    "goal_id": "skill1_dvwa_ports",
+    "goal_description": "Enumerate open ports and services on DVWA server",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "8001",
+          "version_detect": true
+        },
+        "success": true
+      },
+      {
+        "step": 1,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "1-1000",
+          "version_detect": true
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 238.101149
+  },
+  {
+    "skill": "skill1_port_enum",
+    "goal_id": "skill1_juice_ports",
+    "goal_description": "Enumerate open ports and services on Juice Shop",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "8002",
+          "version_detect": true
+        },
+        "success": true
+      },
+      {
+        "step": 1,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "version_detect": true,
+          "os_detect": true
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 357.23603
+  },
+  {
+    "skill": "skill1_port_enum",
+    "goal_id": "skill1_juice_ports",
+    "goal_description": "Enumerate open ports and services on Juice Shop",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "8002",
+          "version_detect": true
+        },
+        "success": true
+      },
+      {
+        "step": 1,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "1-65535",
+          "version_detect": true,
+          "scripts": "default"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "1-1000",
+          "version_detect": true,
+          "scripts": "default"
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 546.340167
+  },
+  {
+    "skill": "skill1_port_enum",
+    "goal_id": "skill1_juice_ports",
+    "goal_description": "Enumerate open ports and services on Juice Shop",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "8002",
+          "version_detect": true
+        },
+        "success": true
+      },
+      {
+        "step": 1,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "os_detect": true,
+          "version_detect": true
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 318.263832
+  },
+  {
+    "skill": "skill1_port_enum",
+    "goal_id": "skill1_bwapp_ports",
+    "goal_description": "Enumerate open ports and services on bWAPP",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "8003",
+          "version_detect": true,
+          "scan_type": "-sV"
+        },
+        "success": true
+      },
+      {
+        "step": 1,
+        "tool": "nikto",
+        "parameters": {
+          "target": "192.168.0.41",
+          "port": 8003
+        },
+        "success": true
+      }
+    ],
+    "success": true,
+    "duration_seconds": 207.735394
+  },
+  {
+    "skill": "skill1_port_enum",
+    "goal_id": "skill1_bwapp_ports",
+    "goal_description": "Enumerate open ports and services on bWAPP",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "8003",
+          "version_detect": true
+        },
+        "success": true
+      },
+      {
+        "step": 1,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "1-1000",
+          "version_detect": true
+        },
+        "success": true
+      },
+      {
+        "step": 2,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "1001-65535",
+          "version_detect": true
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 502.631372
+  },
+  {
+    "skill": "skill1_port_enum",
+    "goal_id": "skill1_bwapp_ports",
+    "goal_description": "Enumerate open ports and services on bWAPP",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "8003",
+          "version_detect": true,
+          "os_detect": true
+        },
+        "success": true
+      },
+      {
+        "step": 1,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "1-1000",
+          "version_detect": true
+        },
+        "success": true
+      },
+      {
+        "step": 2,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "1-65535",
+          "version_detect": true
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 509.979968
+  },
+  {
+    "skill": "skill1_port_enum",
+    "goal_id": "skill1_msf_ports",
+    "goal_description": "Enumerate open ports on Metasploitable2 FTP/SSH",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "8021,8022",
+          "version_detect": true
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 8.715313
+  },
+  {
+    "skill": "skill1_port_enum",
+    "goal_id": "skill1_msf_ports",
+    "goal_description": "Enumerate open ports on Metasploitable2 FTP/SSH",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "8021,8022",
+          "version_detect": true
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 7.314817
+  },
+  {
+    "skill": "skill1_port_enum",
+    "goal_id": "skill1_msf_ports",
+    "goal_description": "Enumerate open ports on Metasploitable2 FTP/SSH",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "8021,8022",
+          "version_detect": true
+        },
+        "success": true
+      },
+      {
+        "step": 1,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "8022",
+          "version_detect": true
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 10.898642
+  },
+  {
+    "skill": "skill2_web_scan",
+    "goal_id": "skill2_dvwa_webscan",
+    "goal_description": "Scan DVWA for web vulnerabilities using nikto",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41",
+          "port": 8001
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41:8001"
+        },
+        "success": true
+      },
+      {
+        "step": 2,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41:8001"
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 89.954301
+  },
+  {
+    "skill": "skill2_web_scan",
+    "goal_id": "skill2_dvwa_webscan",
+    "goal_description": "Scan DVWA for web vulnerabilities using nikto",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41",
+          "port": 8001
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41",
+          "port": 8001
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41:8001"
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 50.637669
+  },
+  {
+    "skill": "skill2_web_scan",
+    "goal_id": "skill2_dvwa_webscan",
+    "goal_description": "Scan DVWA for web vulnerabilities using nikto",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41:8001"
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 58.138075
+  },
+  {
+    "skill": "skill2_web_scan",
+    "goal_id": "skill2_juice_webscan",
+    "goal_description": "Scan Juice Shop for web vulnerabilities using nikto",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41",
+          "port": 8002,
+          "ssl": false
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41:8002"
+        },
+        "success": true
+      },
+      {
+        "step": 2,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41:8002"
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 95.781274
+  },
+  {
+    "skill": "skill2_web_scan",
+    "goal_id": "skill2_juice_webscan",
+    "goal_description": "Scan Juice Shop for web vulnerabilities using nikto",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41",
+          "port": 8002
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41:8002"
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 53.159963
+  },
+  {
+    "skill": "skill2_web_scan",
+    "goal_id": "skill2_juice_webscan",
+    "goal_description": "Scan Juice Shop for web vulnerabilities using nikto",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41",
+          "port": 8002
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41:8002"
+        },
+        "success": true
+      },
+      {
+        "step": 2,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41:8002"
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 97.557536
+  },
+  {
+    "skill": "skill2_web_scan",
+    "goal_id": "skill2_bwapp_webscan",
+    "goal_description": "Scan bWAPP for web vulnerabilities using nikto",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41",
+          "port": 8003
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41:8003"
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 64.559327
+  },
+  {
+    "skill": "skill2_web_scan",
+    "goal_id": "skill2_bwapp_webscan",
+    "goal_description": "Scan bWAPP for web vulnerabilities using nikto",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41",
+          "port": 8003
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41:8003"
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 69.089579
+  },
+  {
+    "skill": "skill2_web_scan",
+    "goal_id": "skill2_bwapp_webscan",
+    "goal_description": "Scan bWAPP for web vulnerabilities using nikto",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41",
+          "port": 8003
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41:8003"
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 54.941934
+  },
+  {
+    "skill": "skill2_web_scan",
+    "goal_id": "skill2_mutillidae_webscan",
+    "goal_description": "Scan Mutillidae for web vulnerabilities using nikto",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41",
+          "port": 8006
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41:8006"
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 69.639826
+  },
+  {
+    "skill": "skill2_web_scan",
+    "goal_id": "skill2_mutillidae_webscan",
+    "goal_description": "Scan Mutillidae for web vulnerabilities using nikto",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41",
+          "port": 8006
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41:8006"
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 57.696988
+  },
+  {
+    "skill": "skill2_web_scan",
+    "goal_id": "skill2_mutillidae_webscan",
+    "goal_description": "Scan Mutillidae for web vulnerabilities using nikto",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41",
+          "port": 8006
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41:8006"
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 50.105154
+  },
+  {
+    "skill": "skill3_dir_brute",
+    "goal_id": "skill3_dvwa_dirs",
+    "goal_description": "Discover hidden directories on DVWA using gobuster",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8001",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8001",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8001"
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 177.90034
+  },
+  {
+    "skill": "skill3_dir_brute",
+    "goal_id": "skill3_dvwa_dirs",
+    "goal_description": "Discover hidden directories on DVWA using gobuster",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8001",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8001"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8001",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 166.274027
+  },
+  {
+    "skill": "skill3_dir_brute",
+    "goal_id": "skill3_dvwa_dirs",
+    "goal_description": "Discover hidden directories on DVWA using gobuster",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8001",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8001"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8001",
+          "wordlist": "/usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt"
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 176.602136
+  },
+  {
+    "skill": "skill3_dir_brute",
+    "goal_id": "skill3_bwapp_dirs",
+    "goal_description": "Discover hidden directories on bWAPP using gobuster",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8003",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8003",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt",
+          "threads": 10
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8003"
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 330.884896
+  },
+  {
+    "skill": "skill3_dir_brute",
+    "goal_id": "skill3_bwapp_dirs",
+    "goal_description": "Discover hidden directories on bWAPP using gobuster",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8003",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8003",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8003"
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 332.165864
+  },
+  {
+    "skill": "skill3_dir_brute",
+    "goal_id": "skill3_bwapp_dirs",
+    "goal_description": "Discover hidden directories on bWAPP using gobuster",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8003",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8003"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8003",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 334.173069
+  },
+  {
+    "skill": "skill3_dir_brute",
+    "goal_id": "skill3_mutillidae_dirs",
+    "goal_description": "Discover hidden directories on Mutillidae using gobuster",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8006",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41:8006"
+        },
+        "success": true
+      },
+      {
+        "step": 2,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8006",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 101.323058
+  },
+  {
+    "skill": "skill3_dir_brute",
+    "goal_id": "skill3_mutillidae_dirs",
+    "goal_description": "Discover hidden directories on Mutillidae using gobuster",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8006",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8006",
+          "wordlist": "/usr/share/wordlists/seclists/Discovery/Web-Content/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8006",
+          "wordlist": "/usr/share/wordlists/seclists/Discovery/Web-Content/big.txt"
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 28.181636
+  },
+  {
+    "skill": "skill3_dir_brute",
+    "goal_id": "skill3_mutillidae_dirs",
+    "goal_description": "Discover hidden directories on Mutillidae using gobuster",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8006",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8006",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt",
+          "threads": 10
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8006"
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 351.497165
+  },
+  {
+    "skill": "skill3_dir_brute",
+    "goal_id": "skill3_webgoat_dirs",
+    "goal_description": "Discover hidden directories on WebGoat using gobuster",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8004",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8004",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8004"
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 167.512754
+  },
+  {
+    "skill": "skill3_dir_brute",
+    "goal_id": "skill3_webgoat_dirs",
+    "goal_description": "Discover hidden directories on WebGoat using gobuster",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8004",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8004",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8004",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 50.036632
+  },
+  {
+    "skill": "skill3_dir_brute",
+    "goal_id": "skill3_webgoat_dirs",
+    "goal_description": "Discover hidden directories on WebGoat using gobuster",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8004",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8004",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8004"
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 345.634662
+  },
+  {
+    "skill": "skill4_default_creds",
+    "goal_id": "skill4_msf_ssh_creds",
+    "goal_description": "Test default SSH credentials on Metasploitable2",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nc",
+        "parameters": {
+          "mode": "connect",
+          "host": "192.168.0.41",
+          "port": 8022
+        },
+        "success": true
+      },
+      {
+        "step": 1,
+        "tool": "nc",
+        "parameters": {
+          "mode": "connect",
+          "host": "192.168.0.41",
+          "port": 8022
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 285.871501
+  },
+  {
+    "skill": "skill4_default_creds",
+    "goal_id": "skill4_msf_ssh_creds",
+    "goal_description": "Test default SSH credentials on Metasploitable2",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nc",
+        "parameters": {
+          "mode": "connect",
+          "host": "192.168.0.41",
+          "port": 8022
+        },
+        "success": true
+      },
+      {
+        "step": 1,
+        "tool": "curl",
+        "parameters": {
+          "url": "ssh://192.168.0.41:8022",
+          "headers": "Authorization: Basic bXNmYWRtaW46bXNmYWRtaW4="
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "nc",
+        "parameters": {
+          "mode": "connect",
+          "host": "192.168.0.41",
+          "port": 8022
+        },
+        "success": true
+      },
+      {
+        "step": 3,
+        "tool": "nc",
+        "parameters": {
+          "mode": "connect",
+          "host": "192.168.0.41",
+          "port": 8022
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 384.261805
+  },
+  {
+    "skill": "skill4_default_creds",
+    "goal_id": "skill4_msf_ssh_creds",
+    "goal_description": "Test default SSH credentials on Metasploitable2",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nc",
+        "parameters": {
+          "mode": "connect",
+          "host": "192.168.0.41",
+          "port": 8022
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 137.827049
+  },
+  {
+    "skill": "skill4_default_creds",
+    "goal_id": "skill4_msf_ftp_creds",
+    "goal_description": "Test FTP access on Metasploitable2",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "curl",
+        "parameters": {
+          "url": "ftp://192.168.0.41:8021/"
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "curl",
+        "parameters": {
+          "url": "ftp://192.168.0.41:8021/",
+          "method": "GET"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "nc",
+        "parameters": {
+          "mode": "connect",
+          "host": "192.168.0.41",
+          "port": 8021
+        },
+        "success": false
+      },
+      {
+        "step": 3,
+        "tool": "nc",
+        "parameters": {
+          "mode": "connect",
+          "host": "192.168.0.41",
+          "port": 8021
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 1161.469143
+  },
+  {
+    "skill": "skill4_default_creds",
+    "goal_id": "skill4_msf_ftp_creds",
+    "goal_description": "Test FTP access on Metasploitable2",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "curl",
+        "parameters": {
+          "url": "ftp://192.168.0.41:8021"
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "curl",
+        "parameters": {
+          "url": "ftp://192.168.0.41:8021",
+          "method": "GET",
+          "headers": {
+            "User-Agent": "Mozilla/5.0"
+          },
+          "data": "-u anonymous:"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "nc",
+        "parameters": {
+          "mode": "connect",
+          "host": "192.168.0.41",
+          "port": 8021
+        },
+        "success": false
+      },
+      {
+        "step": 3,
+        "tool": "curl",
+        "parameters": {
+          "url": "ftp://192.168.0.41:8021",
+          "method": "GET",
+          "data": "-u anonymous:"
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 1122.635914
+  },
+  {
+    "skill": "skill4_default_creds",
+    "goal_id": "skill4_msf_ftp_creds",
+    "goal_description": "Test FTP access on Metasploitable2",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "curl",
+        "parameters": {
+          "url": "ftp://192.168.0.41:8021",
+          "method": "anonymous"
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "curl",
+        "parameters": {
+          "url": "ftp://anonymous@192.168.0.41:8021"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "curl",
+        "parameters": {
+          "url": "ftp://192.168.0.41:8021",
+          "method": "anonymous",
+          "headers": "-u anonymous:anonymous"
+        },
+        "success": false
+      },
+      {
+        "step": 3,
+        "tool": "nc",
+        "parameters": {
+          "mode": "connect",
+          "host": "192.168.0.41",
+          "port": 8021
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 1122.222806
+  },
+  {
+    "skill": "skill4_default_creds",
+    "goal_id": "skill4_dvwa_login",
+    "goal_description": "Find default credentials for DVWA login",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nikto",
+        "parameters": {
+          "target": "192.168.0.41",
+          "port": 8001
+        },
+        "success": true
+      },
+      {
+        "step": 1,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8001/login.php",
+          "method": "POST",
+          "data": "username=admin&password=password"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8001/login.php",
+          "method": "POST",
+          "data": "username=admin&password=password",
+          "headers": [
+            "Content-Type: application/x-www-form-urlencoded"
+          ]
+        },
+        "success": false
+      },
+      {
+        "step": 3,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8001/login.php",
+          "method": "POST",
+          "data": "username=admin&password=password",
+          "headers": [
+            "Content-Type: application/x-www-form-urlencoded"
+          ],
+          "additional_parameters": "-c cookies.txt"
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 528.463528
+  },
+  {
+    "skill": "skill4_default_creds",
+    "goal_id": "skill4_dvwa_login",
+    "goal_description": "Find default credentials for DVWA login",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "8001",
+          "version_detect": true
+        },
+        "success": true
+      }
+    ],
+    "success": true,
+    "duration_seconds": 20.494702
+  },
+  {
+    "skill": "skill4_default_creds",
+    "goal_id": "skill4_dvwa_login",
+    "goal_description": "Find default credentials for DVWA login",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nikto",
+        "parameters": {
+          "target": "192.168.0.41",
+          "port": 8001
+        },
+        "success": true
+      },
+      {
+        "step": 1,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8001/login.php",
+          "method": "POST",
+          "data": "username=admin&password=password&Login=Login"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8001/login.php"
+        },
+        "success": false
+      },
+      {
+        "step": 3,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8001/login.php",
+          "method": "POST",
+          "data": "username=admin&password=password&Login=Login",
+          "headers": [
+            "Content-Type: application/x-www-form-urlencoded"
+          ]
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 456.687543
+  },
+  {
+    "skill": "skill5_api_enum",
+    "goal_id": "skill5_vampi_api",
+    "goal_description": "Enumerate VAmPI REST API endpoints",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8008/openapi.json"
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8008/swagger"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8008",
+          "wordlist": "/usr/share/wordlists/dirb/api_wordlist.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 3,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8008/api"
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 428.028163
+  },
+  {
+    "skill": "skill5_api_enum",
+    "goal_id": "skill5_vampi_api",
+    "goal_description": "Enumerate VAmPI REST API endpoints",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8008/openapi.json"
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8008/swagger"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8008",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 3,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8008/api"
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 444.41624
+  },
+  {
+    "skill": "skill5_api_enum",
+    "goal_id": "skill5_vampi_api",
+    "goal_description": "Enumerate VAmPI REST API endpoints",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41",
+          "port": 8008
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8008/openapi.json"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8008/swagger"
+        },
+        "success": false
+      },
+      {
+        "step": 3,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8008",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 305.421704
+  },
+  {
+    "skill": "skill5_api_enum",
+    "goal_id": "skill5_juice_api",
+    "goal_description": "Enumerate Juice Shop REST API endpoints",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8002/api"
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8002/rest"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8002",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 3,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8002",
+          "wordlist": "/usr/share/wordlists/dirb/api-endpoints.txt"
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 638.446503
+  },
+  {
+    "skill": "skill5_api_enum",
+    "goal_id": "skill5_juice_api",
+    "goal_description": "Enumerate Juice Shop REST API endpoints",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8002/api"
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8002/rest"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8002",
+          "wordlist": "/usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt",
+          "threads": 10
+        },
+        "success": false
+      },
+      {
+        "step": 3,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41",
+          "port": 8002
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 639.032186
+  },
+  {
+    "skill": "skill5_api_enum",
+    "goal_id": "skill5_juice_api",
+    "goal_description": "Enumerate Juice Shop REST API endpoints",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8002/api"
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8002/rest"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8002",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 3,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41",
+          "port": 8002
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 636.3863
+  },
+  {
+    "skill": "skill5_api_enum",
+    "goal_id": "skill5_webgoat_api",
+    "goal_description": "Enumerate WebGoat API structure",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8004/WebGoat"
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8004/WebGoat",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41",
+          "port": 8004
+        },
+        "success": false
+      },
+      {
+        "step": 3,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8004/WebGoat/api"
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 620.545544
+  },
+  {
+    "skill": "skill5_api_enum",
+    "goal_id": "skill5_webgoat_api",
+    "goal_description": "Enumerate WebGoat API structure",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "8004",
+          "version_detect": true
+        },
+        "success": true
+      },
+      {
+        "step": 1,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8004/WebGoat/"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8004/WebGoat",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 3,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41",
+          "port": "8004"
+        },
+        "success": false
+      }
+    ],
+    "success": true,
+    "duration_seconds": 162.34656
+  },
+  {
+    "skill": "skill5_api_enum",
+    "goal_id": "skill5_webgoat_api",
+    "goal_description": "Enumerate WebGoat API structure",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41",
+          "port": 8004
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8004/WebGoat"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8004/"
+        },
+        "success": false
+      },
+      {
+        "step": 3,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8004/WebGoat",
+          "wordlist": "/usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt"
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 297.952608
+  }
+]

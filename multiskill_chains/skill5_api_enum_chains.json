@@ -1,0 +1,399 @@
+[
+  {
+    "skill": "skill5_api_enum",
+    "goal_id": "skill5_vampi_api",
+    "goal_description": "Enumerate VAmPI REST API endpoints",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8008/openapi.json"
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8008/swagger"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8008",
+          "wordlist": "/usr/share/wordlists/dirb/api_wordlist.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 3,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8008/api"
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 428.028163
+  },
+  {
+    "skill": "skill5_api_enum",
+    "goal_id": "skill5_vampi_api",
+    "goal_description": "Enumerate VAmPI REST API endpoints",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8008/openapi.json"
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8008/swagger"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8008",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 3,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8008/api"
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 444.41624
+  },
+  {
+    "skill": "skill5_api_enum",
+    "goal_id": "skill5_vampi_api",
+    "goal_description": "Enumerate VAmPI REST API endpoints",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41",
+          "port": 8008
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8008/openapi.json"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8008/swagger"
+        },
+        "success": false
+      },
+      {
+        "step": 3,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8008",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 305.421704
+  },
+  {
+    "skill": "skill5_api_enum",
+    "goal_id": "skill5_juice_api",
+    "goal_description": "Enumerate Juice Shop REST API endpoints",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8002/api"
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8002/rest"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8002",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 3,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8002",
+          "wordlist": "/usr/share/wordlists/dirb/api-endpoints.txt"
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 638.446503
+  },
+  {
+    "skill": "skill5_api_enum",
+    "goal_id": "skill5_juice_api",
+    "goal_description": "Enumerate Juice Shop REST API endpoints",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8002/api"
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8002/rest"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8002",
+          "wordlist": "/usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt",
+          "threads": 10
+        },
+        "success": false
+      },
+      {
+        "step": 3,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41",
+          "port": 8002
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 639.032186
+  },
+  {
+    "skill": "skill5_api_enum",
+    "goal_id": "skill5_juice_api",
+    "goal_description": "Enumerate Juice Shop REST API endpoints",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8002/api"
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8002/rest"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8002",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 3,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41",
+          "port": 8002
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 636.3863
+  },
+  {
+    "skill": "skill5_api_enum",
+    "goal_id": "skill5_webgoat_api",
+    "goal_description": "Enumerate WebGoat API structure",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8004/WebGoat"
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8004/WebGoat",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41",
+          "port": 8004
+        },
+        "success": false
+      },
+      {
+        "step": 3,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8004/WebGoat/api"
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 620.545544
+  },
+  {
+    "skill": "skill5_api_enum",
+    "goal_id": "skill5_webgoat_api",
+    "goal_description": "Enumerate WebGoat API structure",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "8004",
+          "version_detect": true
+        },
+        "success": true
+      },
+      {
+        "step": 1,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8004/WebGoat/"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8004/WebGoat",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 3,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41",
+          "port": "8004"
+        },
+        "success": false
+      }
+    ],
+    "success": true,
+    "duration_seconds": 162.34656
+  },
+  {
+    "skill": "skill5_api_enum",
+    "goal_id": "skill5_webgoat_api",
+    "goal_description": "Enumerate WebGoat API structure",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41",
+          "port": 8004
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8004/WebGoat"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8004/"
+        },
+        "success": false
+      },
+      {
+        "step": 3,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8004/WebGoat",
+          "wordlist": "/usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt"
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 297.952608
+  }
+]

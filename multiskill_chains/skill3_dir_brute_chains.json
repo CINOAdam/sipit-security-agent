@@ -1,0 +1,438 @@
+[
+  {
+    "skill": "skill3_dir_brute",
+    "goal_id": "skill3_dvwa_dirs",
+    "goal_description": "Discover hidden directories on DVWA using gobuster",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8001",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8001",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8001"
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 177.90034
+  },
+  {
+    "skill": "skill3_dir_brute",
+    "goal_id": "skill3_dvwa_dirs",
+    "goal_description": "Discover hidden directories on DVWA using gobuster",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8001",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8001"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8001",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 166.274027
+  },
+  {
+    "skill": "skill3_dir_brute",
+    "goal_id": "skill3_dvwa_dirs",
+    "goal_description": "Discover hidden directories on DVWA using gobuster",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8001",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8001"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8001",
+          "wordlist": "/usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt"
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 176.602136
+  },
+  {
+    "skill": "skill3_dir_brute",
+    "goal_id": "skill3_bwapp_dirs",
+    "goal_description": "Discover hidden directories on bWAPP using gobuster",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8003",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8003",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt",
+          "threads": 10
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8003"
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 330.884896
+  },
+  {
+    "skill": "skill3_dir_brute",
+    "goal_id": "skill3_bwapp_dirs",
+    "goal_description": "Discover hidden directories on bWAPP using gobuster",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8003",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8003",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8003"
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 332.165864
+  },
+  {
+    "skill": "skill3_dir_brute",
+    "goal_id": "skill3_bwapp_dirs",
+    "goal_description": "Discover hidden directories on bWAPP using gobuster",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8003",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8003"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8003",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 334.173069
+  },
+  {
+    "skill": "skill3_dir_brute",
+    "goal_id": "skill3_mutillidae_dirs",
+    "goal_description": "Discover hidden directories on Mutillidae using gobuster",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8006",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41:8006"
+        },
+        "success": true
+      },
+      {
+        "step": 2,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8006",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 101.323058
+  },
+  {
+    "skill": "skill3_dir_brute",
+    "goal_id": "skill3_mutillidae_dirs",
+    "goal_description": "Discover hidden directories on Mutillidae using gobuster",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8006",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8006",
+          "wordlist": "/usr/share/wordlists/seclists/Discovery/Web-Content/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8006",
+          "wordlist": "/usr/share/wordlists/seclists/Discovery/Web-Content/big.txt"
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 28.181636
+  },
+  {
+    "skill": "skill3_dir_brute",
+    "goal_id": "skill3_mutillidae_dirs",
+    "goal_description": "Discover hidden directories on Mutillidae using gobuster",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8006",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8006",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt",
+          "threads": 10
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8006"
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 351.497165
+  },
+  {
+    "skill": "skill3_dir_brute",
+    "goal_id": "skill3_webgoat_dirs",
+    "goal_description": "Discover hidden directories on WebGoat using gobuster",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8004",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8004",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8004"
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 167.512754
+  },
+  {
+    "skill": "skill3_dir_brute",
+    "goal_id": "skill3_webgoat_dirs",
+    "goal_description": "Discover hidden directories on WebGoat using gobuster",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8004",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8004",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8004",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 50.036632
+  },
+  {
+    "skill": "skill3_dir_brute",
+    "goal_id": "skill3_webgoat_dirs",
+    "goal_description": "Discover hidden directories on WebGoat using gobuster",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8004",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8004",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8004"
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 345.634662
+  }
+]

@@ -1,0 +1,372 @@
+[
+  {
+    "skill": "skill4_default_creds",
+    "goal_id": "skill4_msf_ssh_creds",
+    "goal_description": "Test default SSH credentials on Metasploitable2",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nc",
+        "parameters": {
+          "mode": "connect",
+          "host": "192.168.0.41",
+          "port": 8022
+        },
+        "success": true
+      },
+      {
+        "step": 1,
+        "tool": "nc",
+        "parameters": {
+          "mode": "connect",
+          "host": "192.168.0.41",
+          "port": 8022
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 285.871501
+  },
+  {
+    "skill": "skill4_default_creds",
+    "goal_id": "skill4_msf_ssh_creds",
+    "goal_description": "Test default SSH credentials on Metasploitable2",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nc",
+        "parameters": {
+          "mode": "connect",
+          "host": "192.168.0.41",
+          "port": 8022
+        },
+        "success": true
+      },
+      {
+        "step": 1,
+        "tool": "curl",
+        "parameters": {
+          "url": "ssh://192.168.0.41:8022",
+          "headers": "Authorization: Basic bXNmYWRtaW46bXNmYWRtaW4="
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "nc",
+        "parameters": {
+          "mode": "connect",
+          "host": "192.168.0.41",
+          "port": 8022
+        },
+        "success": true
+      },
+      {
+        "step": 3,
+        "tool": "nc",
+        "parameters": {
+          "mode": "connect",
+          "host": "192.168.0.41",
+          "port": 8022
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 384.261805
+  },
+  {
+    "skill": "skill4_default_creds",
+    "goal_id": "skill4_msf_ssh_creds",
+    "goal_description": "Test default SSH credentials on Metasploitable2",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nc",
+        "parameters": {
+          "mode": "connect",
+          "host": "192.168.0.41",
+          "port": 8022
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 137.827049
+  },
+  {
+    "skill": "skill4_default_creds",
+    "goal_id": "skill4_msf_ftp_creds",
+    "goal_description": "Test FTP access on Metasploitable2",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "curl",
+        "parameters": {
+          "url": "ftp://192.168.0.41:8021/"
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "curl",
+        "parameters": {
+          "url": "ftp://192.168.0.41:8021/",
+          "method": "GET"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "nc",
+        "parameters": {
+          "mode": "connect",
+          "host": "192.168.0.41",
+          "port": 8021
+        },
+        "success": false
+      },
+      {
+        "step": 3,
+        "tool": "nc",
+        "parameters": {
+          "mode": "connect",
+          "host": "192.168.0.41",
+          "port": 8021
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 1161.469143
+  },
+  {
+    "skill": "skill4_default_creds",
+    "goal_id": "skill4_msf_ftp_creds",
+    "goal_description": "Test FTP access on Metasploitable2",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "curl",
+        "parameters": {
+          "url": "ftp://192.168.0.41:8021"
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "curl",
+        "parameters": {
+          "url": "ftp://192.168.0.41:8021",
+          "method": "GET",
+          "headers": {
+            "User-Agent": "Mozilla/5.0"
+          },
+          "data": "-u anonymous:"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "nc",
+        "parameters": {
+          "mode": "connect",
+          "host": "192.168.0.41",
+          "port": 8021
+        },
+        "success": false
+      },
+      {
+        "step": 3,
+        "tool": "curl",
+        "parameters": {
+          "url": "ftp://192.168.0.41:8021",
+          "method": "GET",
+          "data": "-u anonymous:"
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 1122.635914
+  },
+  {
+    "skill": "skill4_default_creds",
+    "goal_id": "skill4_msf_ftp_creds",
+    "goal_description": "Test FTP access on Metasploitable2",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "curl",
+        "parameters": {
+          "url": "ftp://192.168.0.41:8021",
+          "method": "anonymous"
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "curl",
+        "parameters": {
+          "url": "ftp://anonymous@192.168.0.41:8021"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "curl",
+        "parameters": {
+          "url": "ftp://192.168.0.41:8021",
+          "method": "anonymous",
+          "headers": "-u anonymous:anonymous"
+        },
+        "success": false
+      },
+      {
+        "step": 3,
+        "tool": "nc",
+        "parameters": {
+          "mode": "connect",
+          "host": "192.168.0.41",
+          "port": 8021
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 1122.222806
+  },
+  {
+    "skill": "skill4_default_creds",
+    "goal_id": "skill4_dvwa_login",
+    "goal_description": "Find default credentials for DVWA login",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nikto",
+        "parameters": {
+          "target": "192.168.0.41",
+          "port": 8001
+        },
+        "success": true
+      },
+      {
+        "step": 1,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8001/login.php",
+          "method": "POST",
+          "data": "username=admin&password=password"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8001/login.php",
+          "method": "POST",
+          "data": "username=admin&password=password",
+          "headers": [
+            "Content-Type: application/x-www-form-urlencoded"
+          ]
+        },
+        "success": false
+      },
+      {
+        "step": 3,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8001/login.php",
+          "method": "POST",
+          "data": "username=admin&password=password",
+          "headers": [
+            "Content-Type: application/x-www-form-urlencoded"
+          ],
+          "additional_parameters": "-c cookies.txt"
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 528.463528
+  },
+  {
+    "skill": "skill4_default_creds",
+    "goal_id": "skill4_dvwa_login",
+    "goal_description": "Find default credentials for DVWA login",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "8001",
+          "version_detect": true
+        },
+        "success": true
+      }
+    ],
+    "success": true,
+    "duration_seconds": 20.494702
+  },
+  {
+    "skill": "skill4_default_creds",
+    "goal_id": "skill4_dvwa_login",
+    "goal_description": "Find default credentials for DVWA login",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nikto",
+        "parameters": {
+          "target": "192.168.0.41",
+          "port": 8001
+        },
+        "success": true
+      },
+      {
+        "step": 1,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8001/login.php",
+          "method": "POST",
+          "data": "username=admin&password=password&Login=Login"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8001/login.php"
+        },
+        "success": false
+      },
+      {
+        "step": 3,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8001/login.php",
+          "method": "POST",
+          "data": "username=admin&password=password&Login=Login",
+          "headers": [
+            "Content-Type: application/x-www-form-urlencoded"
+          ]
+        },
+        "success": false
+      }
+    ],
+    "success": false,
+    "duration_seconds": 456.687543
+  }
+]

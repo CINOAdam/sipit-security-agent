@@ -1,0 +1,385 @@
+[
+  {
+    "skill": "skill1_port_enum",
+    "goal_id": "skill1_dvwa_ports",
+    "goal_description": "Enumerate open ports and services on DVWA server",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "8001",
+          "version_detect": true
+        },
+        "success": true
+      },
+      {
+        "step": 1,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "1-65535",
+          "version_detect": true
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 446.725837
+  },
+  {
+    "skill": "skill1_port_enum",
+    "goal_id": "skill1_dvwa_ports",
+    "goal_description": "Enumerate open ports and services on DVWA server",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "8001",
+          "version_detect": true
+        },
+        "success": true
+      },
+      {
+        "step": 1,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "1-1000",
+          "version_detect": true
+        },
+        "success": true
+      },
+      {
+        "step": 2,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "1001-65535",
+          "version_detect": true
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 508.92777
+  },
+  {
+    "skill": "skill1_port_enum",
+    "goal_id": "skill1_dvwa_ports",
+    "goal_description": "Enumerate open ports and services on DVWA server",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "8001",
+          "version_detect": true
+        },
+        "success": true
+      },
+      {
+        "step": 1,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "1-1000",
+          "version_detect": true
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 238.101149
+  },
+  {
+    "skill": "skill1_port_enum",
+    "goal_id": "skill1_juice_ports",
+    "goal_description": "Enumerate open ports and services on Juice Shop",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "8002",
+          "version_detect": true
+        },
+        "success": true
+      },
+      {
+        "step": 1,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "version_detect": true,
+          "os_detect": true
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 357.23603
+  },
+  {
+    "skill": "skill1_port_enum",
+    "goal_id": "skill1_juice_ports",
+    "goal_description": "Enumerate open ports and services on Juice Shop",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "8002",
+          "version_detect": true
+        },
+        "success": true
+      },
+      {
+        "step": 1,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "1-65535",
+          "version_detect": true,
+          "scripts": "default"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "1-1000",
+          "version_detect": true,
+          "scripts": "default"
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 546.340167
+  },
+  {
+    "skill": "skill1_port_enum",
+    "goal_id": "skill1_juice_ports",
+    "goal_description": "Enumerate open ports and services on Juice Shop",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "8002",
+          "version_detect": true
+        },
+        "success": true
+      },
+      {
+        "step": 1,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "os_detect": true,
+          "version_detect": true
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 318.263832
+  },
+  {
+    "skill": "skill1_port_enum",
+    "goal_id": "skill1_bwapp_ports",
+    "goal_description": "Enumerate open ports and services on bWAPP",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "8003",
+          "version_detect": true,
+          "scan_type": "-sV"
+        },
+        "success": true
+      },
+      {
+        "step": 1,
+        "tool": "nikto",
+        "parameters": {
+          "target": "192.168.0.41",
+          "port": 8003
+        },
+        "success": true
+      }
+    ],
+    "success": true,
+    "duration_seconds": 207.735394
+  },
+  {
+    "skill": "skill1_port_enum",
+    "goal_id": "skill1_bwapp_ports",
+    "goal_description": "Enumerate open ports and services on bWAPP",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "8003",
+          "version_detect": true
+        },
+        "success": true
+      },
+      {
+        "step": 1,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "1-1000",
+          "version_detect": true
+        },
+        "success": true
+      },
+      {
+        "step": 2,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "1001-65535",
+          "version_detect": true
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 502.631372
+  },
+  {
+    "skill": "skill1_port_enum",
+    "goal_id": "skill1_bwapp_ports",
+    "goal_description": "Enumerate open ports and services on bWAPP",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "8003",
+          "version_detect": true,
+          "os_detect": true
+        },
+        "success": true
+      },
+      {
+        "step": 1,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "1-1000",
+          "version_detect": true
+        },
+        "success": true
+      },
+      {
+        "step": 2,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "1-65535",
+          "version_detect": true
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 509.979968
+  },
+  {
+    "skill": "skill1_port_enum",
+    "goal_id": "skill1_msf_ports",
+    "goal_description": "Enumerate open ports on Metasploitable2 FTP/SSH",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "8021,8022",
+          "version_detect": true
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 8.715313
+  },
+  {
+    "skill": "skill1_port_enum",
+    "goal_id": "skill1_msf_ports",
+    "goal_description": "Enumerate open ports on Metasploitable2 FTP/SSH",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "8021,8022",
+          "version_detect": true
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 7.314817
+  },
+  {
+    "skill": "skill1_port_enum",
+    "goal_id": "skill1_msf_ports",
+    "goal_description": "Enumerate open ports on Metasploitable2 FTP/SSH",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "8021,8022",
+          "version_detect": true
+        },
+        "success": true
+      },
+      {
+        "step": 1,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "8022",
+          "version_detect": true
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 10.898642
+  }
+]

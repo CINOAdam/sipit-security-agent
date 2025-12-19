@@ -1,0 +1,191 @@
+{
+  "total_chains": 54,
+  "chains_by_skill": {
+    "skill1_port_enum": 12,
+    "skill2_web_scan": 12,
+    "skill3_dir_brute": 12,
+    "skill4_default_creds": 9,
+    "skill5_api_enum": 9
+  },
+  "tool_frequencies": {
+    "skill1_port_enum": {
+      "nmap": 0.9615384615384616,
+      "nikto": 0.038461538461538464
+    },
+    "skill2_web_scan": {
+      "nikto": 1.0
+    },
+    "skill3_dir_brute": {
+      "gobuster": 0.7222222222222222,
+      "curl": 0.25,
+      "nikto": 0.027777777777777776
+    },
+    "skill4_default_creds": {
+      "nc": 0.35714285714285715,
+      "curl": 0.5357142857142857,
+      "nikto": 0.07142857142857142,
+      "nmap": 0.03571428571428571
+    },
+    "skill5_api_enum": {
+      "curl": 0.5277777777777778,
+      "gobuster": 0.2777777777777778,
+      "nikto": 0.16666666666666666,
+      "nmap": 0.027777777777777776
+    }
+  },
+  "skill_similarity": [
+    [
+      1.0,
+      0.039968038348871575,
+      0.0014517045251383684,
+      0.05940453868013936,
+      0.055521329342731324
+    ],
+    [
+      0.039968038348871575,
+      1.0,
+      0.0363216356146074,
+      0.11009637651263604,
+      0.2688664289689325
+    ],
+    [
+      0.0014517045251383684,
+      0.0363216356146074,
+      1.0,
+      0.2739233122073702,
+      0.7112661863164161
+    ],
+    [
+      0.05940453868013936,
+      0.11009637651263604,
+      0.2739233122073702,
+      0.9999999999999999,
+      0.7350969532850592
+    ],
+    [
+      0.055521329342731324,
+      0.2688664289689325,
+      0.7112661863164161,
+      0.7350969532850592,
+      1.0
+    ]
+  ],
+  "skills": [
+    "skill1_port_enum",
+    "skill2_web_scan",
+    "skill3_dir_brute",
+    "skill4_default_creds",
+    "skill5_api_enum"
+  ],
+  "first_tool_by_skill": {
+    "skill1_port_enum": {
+      "nmap": 12
+    },
+    "skill2_web_scan": {
+      "nikto": 12
+    },
+    "skill3_dir_brute": {
+      "gobuster": 12
+    },
+    "skill4_default_creds": {
+      "nc": 3,
+      "curl": 3,
+      "nikto": 2,
+      "nmap": 1
+    },
+    "skill5_api_enum": {
+      "curl": 6,
+      "nikto": 2,
+      "nmap": 1
+    }
+  },
+  "common_sequences": {
+    "skill1_port_enum": [
+      [
+        "nmap \u2192 nmap",
+        5
+      ],
+      [
+        "nmap \u2192 nmap \u2192 nmap",
+        4
+      ],
+      [
+        "nmap",
+        2
+      ]
+    ],
+    "skill2_web_scan": [
+      [
+        "nikto \u2192 nikto",
+        7
+      ],
+      [
+        "nikto \u2192 nikto \u2192 nikto",
+        4
+      ],
+      [
+        "nikto",
+        1
+      ]
+    ],
+    "skill3_dir_brute": [
+      [
+        "gobuster \u2192 gobuster \u2192 curl",
+        6
+      ],
+      [
+        "gobuster \u2192 curl \u2192 gobuster",
+        3
+      ],
+      [
+        "gobuster \u2192 gobuster \u2192 gobuster",
+        2
+      ]
+    ],
+    "skill4_default_creds": [
+      [
+        "curl \u2192 curl \u2192 nc",
+        2
+      ],
+      [
+        "nikto \u2192 curl \u2192 curl",
+        2
+      ],
+      [
+        "nc \u2192 nc",
+        1
+      ]
+    ],
+    "skill5_api_enum": [
+      [
+        "curl \u2192 curl \u2192 gobuster",
+        5
+      ],
+      [
+        "nikto \u2192 curl \u2192 curl",
+        2
+      ],
+      [
+        "curl \u2192 gobuster \u2192 nikto",
+        1
+      ]
+    ]
+  },
+  "failure_stats": {
+    "skill1_port_enum": {
+      "success_rate": 0.08333333333333333
+    },
+    "skill2_web_scan": {
+      "success_rate": 0.0
+    },
+    "skill3_dir_brute": {
+      "success_rate": 0.0
+    },
+    "skill4_default_creds": {
+      "success_rate": 0.1111111111111111
+    },
+    "skill5_api_enum": {
+      "success_rate": 0.1111111111111111
+    }
+  }
+}

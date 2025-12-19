@@ -1,0 +1,351 @@
+[
+  {
+    "skill": "skill2_web_scan",
+    "goal_id": "skill2_dvwa_webscan",
+    "goal_description": "Scan DVWA for web vulnerabilities using nikto",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41",
+          "port": 8001
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41:8001"
+        },
+        "success": true
+      },
+      {
+        "step": 2,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41:8001"
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 89.954301
+  },
+  {
+    "skill": "skill2_web_scan",
+    "goal_id": "skill2_dvwa_webscan",
+    "goal_description": "Scan DVWA for web vulnerabilities using nikto",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41",
+          "port": 8001
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41",
+          "port": 8001
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41:8001"
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 50.637669
+  },
+  {
+    "skill": "skill2_web_scan",
+    "goal_id": "skill2_dvwa_webscan",
+    "goal_description": "Scan DVWA for web vulnerabilities using nikto",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41:8001"
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 58.138075
+  },
+  {
+    "skill": "skill2_web_scan",
+    "goal_id": "skill2_juice_webscan",
+    "goal_description": "Scan Juice Shop for web vulnerabilities using nikto",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41",
+          "port": 8002,
+          "ssl": false
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41:8002"
+        },
+        "success": true
+      },
+      {
+        "step": 2,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41:8002"
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 95.781274
+  },
+  {
+    "skill": "skill2_web_scan",
+    "goal_id": "skill2_juice_webscan",
+    "goal_description": "Scan Juice Shop for web vulnerabilities using nikto",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41",
+          "port": 8002
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41:8002"
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 53.159963
+  },
+  {
+    "skill": "skill2_web_scan",
+    "goal_id": "skill2_juice_webscan",
+    "goal_description": "Scan Juice Shop for web vulnerabilities using nikto",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41",
+          "port": 8002
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41:8002"
+        },
+        "success": true
+      },
+      {
+        "step": 2,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41:8002"
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 97.557536
+  },
+  {
+    "skill": "skill2_web_scan",
+    "goal_id": "skill2_bwapp_webscan",
+    "goal_description": "Scan bWAPP for web vulnerabilities using nikto",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41",
+          "port": 8003
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41:8003"
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 64.559327
+  },
+  {
+    "skill": "skill2_web_scan",
+    "goal_id": "skill2_bwapp_webscan",
+    "goal_description": "Scan bWAPP for web vulnerabilities using nikto",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41",
+          "port": 8003
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41:8003"
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 69.089579
+  },
+  {
+    "skill": "skill2_web_scan",
+    "goal_id": "skill2_bwapp_webscan",
+    "goal_description": "Scan bWAPP for web vulnerabilities using nikto",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41",
+          "port": 8003
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41:8003"
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 54.941934
+  },
+  {
+    "skill": "skill2_web_scan",
+    "goal_id": "skill2_mutillidae_webscan",
+    "goal_description": "Scan Mutillidae for web vulnerabilities using nikto",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41",
+          "port": 8006
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41:8006"
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 69.639826
+  },
+  {
+    "skill": "skill2_web_scan",
+    "goal_id": "skill2_mutillidae_webscan",
+    "goal_description": "Scan Mutillidae for web vulnerabilities using nikto",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41",
+          "port": 8006
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41:8006"
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 57.696988
+  },
+  {
+    "skill": "skill2_web_scan",
+    "goal_id": "skill2_mutillidae_webscan",
+    "goal_description": "Scan Mutillidae for web vulnerabilities using nikto",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41",
+          "port": 8006
+        },
+        "success": false
+      },
+      {
+        "step": 1,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41:8006"
+        },
+        "success": true
+      }
+    ],
+    "success": false,
+    "duration_seconds": 50.105154
+  }
+]

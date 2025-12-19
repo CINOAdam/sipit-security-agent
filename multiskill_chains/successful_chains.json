@@ -1,0 +1,98 @@
+[
+  {
+    "skill": "skill1_port_enum",
+    "goal_id": "skill1_bwapp_ports",
+    "goal_description": "Enumerate open ports and services on bWAPP",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "8003",
+          "version_detect": true,
+          "scan_type": "-sV"
+        },
+        "success": true
+      },
+      {
+        "step": 1,
+        "tool": "nikto",
+        "parameters": {
+          "target": "192.168.0.41",
+          "port": 8003
+        },
+        "success": true
+      }
+    ],
+    "success": true,
+    "duration_seconds": 207.735394
+  },
+  {
+    "skill": "skill4_default_creds",
+    "goal_id": "skill4_dvwa_login",
+    "goal_description": "Find default credentials for DVWA login",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "8001",
+          "version_detect": true
+        },
+        "success": true
+      }
+    ],
+    "success": true,
+    "duration_seconds": 20.494702
+  },
+  {
+    "skill": "skill5_api_enum",
+    "goal_id": "skill5_webgoat_api",
+    "goal_description": "Enumerate WebGoat API structure",
+    "target_ip": "192.168.0.41",
+    "actions": [
+      {
+        "step": 0,
+        "tool": "nmap",
+        "parameters": {
+          "target": "192.168.0.41",
+          "ports": "8004",
+          "version_detect": true
+        },
+        "success": true
+      },
+      {
+        "step": 1,
+        "tool": "curl",
+        "parameters": {
+          "url": "http://192.168.0.41:8004/WebGoat/"
+        },
+        "success": false
+      },
+      {
+        "step": 2,
+        "tool": "gobuster",
+        "parameters": {
+          "target": "http://192.168.0.41:8004/WebGoat",
+          "wordlist": "/usr/share/wordlists/dirb/common.txt"
+        },
+        "success": false
+      },
+      {
+        "step": 3,
+        "tool": "nikto",
+        "parameters": {
+          "target": "http://192.168.0.41",
+          "port": "8004"
+        },
+        "success": false
+      }
+    ],
+    "success": true,
+    "duration_seconds": 162.34656
+  }
+]

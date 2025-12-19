@@ -1,0 +1,32 @@
+# Model files (too large for git)
+multiskill_model/
+self_improve_iterations/*/model/
+*.bin
+*.safetensors
+*.pt
+*.pth
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.egg-info/
+.eggs/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment
+.env
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db

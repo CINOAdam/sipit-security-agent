@@ -1,0 +1,322 @@
+{
+  "base": {
+    "overall_accuracy": 0.6,
+    "skill_accuracies": {
+      "skill1_port_enum": 1.0,
+      "skill2_web_scan": 1.0,
+      "skill3_dir_brute": 1.0,
+      "skill4_default_creds": 0.0,
+      "skill5_api_enum": 0.0
+    },
+    "results": {
+      "skill1_port_enum": [
+        {
+          "run": 1,
+          "extracted_tool": "nmap",
+          "expected_tools": [
+            "nmap"
+          ],
+          "correct": true,
+          "response": "The first action for this task would be to use the nmap tool for port scanning and enumeration. Here's the JSON representation of the command:\n\n```json\n{\n  \"tool\": \"nmap\",\n  \"parameters\": [\n    \"-sS\", // SYN scan\n    \"-sV\", // Version detection\n    \"-A\", // Enable OS detection, version detection, script scanning, and other information gathering\n    \"-oN\", // Output normal output to a file\n    \"report.txt\",\n    \"192.168.0.41\"\n  ]\n}\n```\n\nThis command will perform a SYN scan, version detection, OS "
+        },
+        {
+          "run": 2,
+          "extracted_tool": "nmap",
+          "expected_tools": [
+            "nmap"
+          ],
+          "correct": true,
+          "response": "The first action for this task would be to use the nmap tool for port scanning and enumeration. Here's the JSON representation of the command:\n\n```json\n{\n  \"tool\": \"nmap\",\n  \"parameters\": [\n    \"-sS\", // SYN scan\n    \"-sV\", // Version detection\n    \"-A\", // Enable OS detection, version detection, script scanning, and other information gathering\n    \"-oN\", // Output normal output to a file\n    \"report.txt\",\n    \"192.168.0.41\"\n  ]\n}\n```\n\nThis command will perform a SYN scan, version detection, OS "
+        },
+        {
+          "run": 3,
+          "extracted_tool": "nmap",
+          "expected_tools": [
+            "nmap"
+          ],
+          "correct": true,
+          "response": "The first action for this task would be to use the nmap tool for port scanning and enumeration. Here's the JSON representation of the command:\n\n```json\n{\n  \"tool\": \"nmap\",\n  \"parameters\": [\n    \"-sS\", // SYN scan\n    \"-sV\", // Version detection\n    \"-A\", // Enable OS detection, version detection, script scanning, and other information gathering\n    \"-oN\", // Output normal output to a file\n    \"report.txt\",\n    \"192.168.0.41\"\n  ]\n}\n```\n\nThis command will perform a SYN scan, version detection, OS "
+        }
+      ],
+      "skill2_web_scan": [
+        {
+          "run": 1,
+          "extracted_tool": "nikto",
+          "expected_tools": [
+            "nikto"
+          ],
+          "correct": true,
+          "response": "{\n  \"tool\": \"nikto\",\n  \"parameters\": {\n    \"host\": \"192.168.0.41\",\n    \"output\": \"text\"\n  }\n}"
+        },
+        {
+          "run": 2,
+          "extracted_tool": "nikto",
+          "expected_tools": [
+            "nikto"
+          ],
+          "correct": true,
+          "response": "{\n  \"tool\": \"nikto\",\n  \"parameters\": {\n    \"host\": \"192.168.0.41\",\n    \"output\": \"text\"\n  }\n}"
+        },
+        {
+          "run": 3,
+          "extracted_tool": "nikto",
+          "expected_tools": [
+            "nikto"
+          ],
+          "correct": true,
+          "response": "{\n  \"tool\": \"nikto\",\n  \"parameters\": {\n    \"host\": \"192.168.0.41\",\n    \"output\": \"text\"\n  }\n}"
+        }
+      ],
+      "skill3_dir_brute": [
+        {
+          "run": 1,
+          "extracted_tool": "gobuster",
+          "expected_tools": [
+            "gobuster"
+          ],
+          "correct": true,
+          "response": "{\n  \"tool\": \"gobuster\",\n  \"parameters\": {\n    \"URL\": \"http://192.168.0.41/\",\n    \"Wordlist\": \"/path/to/wordlist.txt\",\n    \"Threads\": \"50\",\n    \"Timeout\": \"5s\"\n  }\n}"
+        },
+        {
+          "run": 2,
+          "extracted_tool": "gobuster",
+          "expected_tools": [
+            "gobuster"
+          ],
+          "correct": true,
+          "response": "{\n  \"tool\": \"gobuster\",\n  \"parameters\": {\n    \"URL\": \"http://192.168.0.41/\",\n    \"Wordlist\": \"/path/to/wordlist.txt\",\n    \"Threads\": \"50\",\n    \"Timeout\": \"5s\"\n  }\n}"
+        },
+        {
+          "run": 3,
+          "extracted_tool": "gobuster",
+          "expected_tools": [
+            "gobuster"
+          ],
+          "correct": true,
+          "response": "{\n  \"tool\": \"gobuster\",\n  \"parameters\": {\n    \"URL\": \"http://192.168.0.41/\",\n    \"Wordlist\": \"/path/to/wordlist.txt\",\n    \"Threads\": \"50\",\n    \"Timeout\": \"5s\"\n  }\n}"
+        }
+      ],
+      "skill4_default_creds": [
+        {
+          "run": 1,
+          "extracted_tool": "nikto",
+          "expected_tools": [
+            "nc",
+            "curl"
+          ],
+          "correct": false,
+          "response": "The first action in a default creds test is to use the tool \"nikto\" to check for common default usernames and misconfigured files that may contain default credentials. Here's the command as JSON:\n\n```json\n{\n  \"tool\": \"nikto\",\n  \"command\": \"-h 192.168.0.41\"\n}\n```\n\nIf this reveals any potential default credentials, the next step would be to attempt to log in using those credentials via SSH or FTP. If no credentials are found, the next step would be to use \"gobuster\" to brute force common usernames"
+        },
+        {
+          "run": 2,
+          "extracted_tool": "nikto",
+          "expected_tools": [
+            "nc",
+            "curl"
+          ],
+          "correct": false,
+          "response": "The first action in a default creds test is to use the tool \"nikto\" to check for common default usernames and misconfigured files that may contain default credentials. Here's the command as JSON:\n\n```json\n{\n  \"tool\": \"nikto\",\n  \"command\": \"-h 192.168.0.41\"\n}\n```\n\nIf this reveals any potential default credentials, the next step would be to attempt to log in using those credentials via SSH or FTP. If no credentials are found, the next step would be to use \"gobuster\" to brute force common usernames"
+        },
+        {
+          "run": 3,
+          "extracted_tool": "nikto",
+          "expected_tools": [
+            "nc",
+            "curl"
+          ],
+          "correct": false,
+          "response": "The first action in a default creds test is to use the tool \"nikto\" to check for common default usernames and misconfigured files that may contain default credentials. Here's the command as JSON:\n\n```json\n{\n  \"tool\": \"nikto\",\n  \"command\": \"-h 192.168.0.41\"\n}\n```\n\nIf this reveals any potential default credentials, the next step would be to attempt to log in using those credentials via SSH or FTP. If no credentials are found, the next step would be to use \"gobuster\" to brute force common usernames"
+        }
+      ],
+      "skill5_api_enum": [
+        {
+          "run": 1,
+          "extracted_tool": "gobuster",
+          "expected_tools": [
+            "curl"
+          ],
+          "correct": false,
+          "response": "The first action to enumerate REST API endpoints on the target IP address 192.168.0.41 would be to use the tool \"gobuster\" for automated directory and file enumeration. This tool is particularly useful for discovering hidden directories and subdomains.\n\nHere's the JSON command for using gobuster:\n\n```json\n{\n  \"tool\": \"gobuster\",\n  \"parameters\": [\n    \"-u\", \"http://192.168.0.41\",\n    \"-w\", \"/usr/share/SecTools/SecProjects/DirBuster/wordlists/common.txt\",\n    \"-t\", \"1000\",\n    \"-r\"\n  ]\n}\n```\n\nThis"
+        },
+        {
+          "run": 2,
+          "extracted_tool": "gobuster",
+          "expected_tools": [
+            "curl"
+          ],
+          "correct": false,
+          "response": "The first action to enumerate REST API endpoints on the target IP address 192.168.0.41 would be to use the tool \"gobuster\" for automated directory and file enumeration. This tool is particularly useful for discovering hidden directories and subdomains.\n\nHere's the JSON command for using gobuster:\n\n```json\n{\n  \"tool\": \"gobuster\",\n  \"parameters\": [\n    \"-u\", \"http://192.168.0.41\",\n    \"-w\", \"/usr/share/SecTools/SecProjects/DirBuster/wordlists/common.txt\",\n    \"-t\", \"1000\",\n    \"-r\"\n  ]\n}\n```\n\nThis"
+        },
+        {
+          "run": 3,
+          "extracted_tool": "gobuster",
+          "expected_tools": [
+            "curl"
+          ],
+          "correct": false,
+          "response": "The first action to enumerate REST API endpoints on the target IP address 192.168.0.41 would be to use the tool \"gobuster\" for automated directory and file enumeration. This tool is particularly useful for discovering hidden directories and subdomains.\n\nHere's the JSON command for using gobuster:\n\n```json\n{\n  \"tool\": \"gobuster\",\n  \"parameters\": [\n    \"-u\", \"http://192.168.0.41\",\n    \"-w\", \"/usr/share/SecTools/SecProjects/DirBuster/wordlists/common.txt\",\n    \"-t\", \"1000\",\n    \"-r\"\n  ]\n}\n```\n\nThis"
+        }
+      ]
+    }
+  },
+  "finetuned": {
+    "overall_accuracy": 1.0,
+    "skill_accuracies": {
+      "skill1_port_enum": 1.0,
+      "skill2_web_scan": 1.0,
+      "skill3_dir_brute": 1.0,
+      "skill4_default_creds": 1.0,
+      "skill5_api_enum": 1.0
+    },
+    "results": {
+      "skill1_port_enum": [
+        {
+          "run": 1,
+          "extracted_tool": "nmap",
+          "expected_tools": [
+            "nmap"
+          ],
+          "correct": true,
+          "response": "{\n  \"skill\": \"skill1_port_enum\",\n  \"reasoning\": \"Using nmap for skill1 port enum\",\n  \"tool_name\": \"nmap\",\n  \"parameters\": {\n    \"target\": \"192.168.0.41\",\n    \"ports\": \"8001\",\n    \"version_detect\": true\n  },\n  \"is_complete\": false\n}"
+        },
+        {
+          "run": 2,
+          "extracted_tool": "nmap",
+          "expected_tools": [
+            "nmap"
+          ],
+          "correct": true,
+          "response": "{\n  \"skill\": \"skill1_port_enum\",\n  \"reasoning\": \"Using nmap for skill1 port enum\",\n  \"tool_name\": \"nmap\",\n  \"parameters\": {\n    \"target\": \"192.168.0.41\",\n    \"ports\": \"8001\",\n    \"version_detect\": true\n  },\n  \"is_complete\": false\n}"
+        },
+        {
+          "run": 3,
+          "extracted_tool": "nmap",
+          "expected_tools": [
+            "nmap"
+          ],
+          "correct": true,
+          "response": "{\n  \"skill\": \"skill1_port_enum\",\n  \"reasoning\": \"Using nmap for skill1 port enum\",\n  \"tool_name\": \"nmap\",\n  \"parameters\": {\n    \"target\": \"192.168.0.41\",\n    \"ports\": \"8001\",\n    \"version_detect\": true\n  },\n  \"is_complete\": false\n}"
+        }
+      ],
+      "skill2_web_scan": [
+        {
+          "run": 1,
+          "extracted_tool": "nikto",
+          "expected_tools": [
+            "nikto"
+          ],
+          "correct": true,
+          "response": "{\n  \"skill\": \"skill2_web_scan\",\n  \"reasoning\": \"Using nikto for skill2 web scan\",\n  \"tool_name\": \"nikto\",\n  \"parameters\": {\n    \"target\": \"http://192.168.0.41\",\n    \"port\": 8001\n  },\n  \"is_complete\": false\n}"
+        },
+        {
+          "run": 2,
+          "extracted_tool": "nikto",
+          "expected_tools": [
+            "nikto"
+          ],
+          "correct": true,
+          "response": "{\n  \"skill\": \"skill2_web_scan\",\n  \"reasoning\": \"Using nikto for skill2 web scan\",\n  \"tool_name\": \"nikto\",\n  \"parameters\": {\n    \"target\": \"http://192.168.0.41\",\n    \"port\": 8001\n  },\n  \"is_complete\": false\n}"
+        },
+        {
+          "run": 3,
+          "extracted_tool": "nikto",
+          "expected_tools": [
+            "nikto"
+          ],
+          "correct": true,
+          "response": "{\n  \"skill\": \"skill2_web_scan\",\n  \"reasoning\": \"Using nikto for skill2 web scan\",\n  \"tool_name\": \"nikto\",\n  \"parameters\": {\n    \"target\": \"http://192.168.0.41\",\n    \"port\": 8001\n  },\n  \"is_complete\": false\n}"
+        }
+      ],
+      "skill3_dir_brute": [
+        {
+          "run": 1,
+          "extracted_tool": "gobuster",
+          "expected_tools": [
+            "gobuster"
+          ],
+          "correct": true,
+          "response": "{\n  \"skill\": \"skill3_dir_brute\",\n  \"reasoning\": \"Using gobuster for skill3 dir brute\",\n  \"tool_name\": \"gobuster\",\n  \"parameters\": {\n    \"target\": \"http://192.168.0.41:8001\",\n    \"wordlist\": \"/usr/share/wordlists/dirb/common.txt\"\n  },\n  \"is_complete\": false\n}"
+        },
+        {
+          "run": 2,
+          "extracted_tool": "gobuster",
+          "expected_tools": [
+            "gobuster"
+          ],
+          "correct": true,
+          "response": "{\n  \"skill\": \"skill3_dir_brute\",\n  \"reasoning\": \"Using gobuster for skill3 dir brute\",\n  \"tool_name\": \"gobuster\",\n  \"parameters\": {\n    \"target\": \"http://192.168.0.41:8001\",\n    \"wordlist\": \"/usr/share/wordlists/dirb/common.txt\"\n  },\n  \"is_complete\": false\n}"
+        },
+        {
+          "run": 3,
+          "extracted_tool": "gobuster",
+          "expected_tools": [
+            "gobuster"
+          ],
+          "correct": true,
+          "response": "{\n  \"skill\": \"skill3_dir_brute\",\n  \"reasoning\": \"Using gobuster for skill3 dir brute\",\n  \"tool_name\": \"gobuster\",\n  \"parameters\": {\n    \"target\": \"http://192.168.0.41:8001\",\n    \"wordlist\": \"/usr/share/wordlists/dirb/common.txt\"\n  },\n  \"is_complete\": false\n}"
+        }
+      ],
+      "skill4_default_creds": [
+        {
+          "run": 1,
+          "extracted_tool": "nc",
+          "expected_tools": [
+            "nc",
+            "curl"
+          ],
+          "correct": true,
+          "response": "{\n  \"skill\": \"skill4_default_creds\",\n  \"reasoning\": \"Using nc for skill4 default creds\",\n  \"tool_name\": \"nc\",\n  \"parameters\": {\n    \"mode\": \"connect\",\n    \"host\": \"192.168.0.41\",\n    \"port\": 8021\n  },\n  \"is_complete\": false\n}"
+        },
+        {
+          "run": 2,
+          "extracted_tool": "nc",
+          "expected_tools": [
+            "nc",
+            "curl"
+          ],
+          "correct": true,
+          "response": "{\n  \"skill\": \"skill4_default_creds\",\n  \"reasoning\": \"Using nc for skill4 default creds\",\n  \"tool_name\": \"nc\",\n  \"parameters\": {\n    \"mode\": \"connect\",\n    \"host\": \"192.168.0.41\",\n    \"port\": 8021\n  },\n  \"is_complete\": false\n}"
+        },
+        {
+          "run": 3,
+          "extracted_tool": "nc",
+          "expected_tools": [
+            "nc",
+            "curl"
+          ],
+          "correct": true,
+          "response": "{\n  \"skill\": \"skill4_default_creds\",\n  \"reasoning\": \"Using nc for skill4 default creds\",\n  \"tool_name\": \"nc\",\n  \"parameters\": {\n    \"mode\": \"connect\",\n    \"host\": \"192.168.0.41\",\n    \"port\": 8021\n  },\n  \"is_complete\": false\n}"
+        }
+      ],
+      "skill5_api_enum": [
+        {
+          "run": 1,
+          "extracted_tool": "curl",
+          "expected_tools": [
+            "curl"
+          ],
+          "correct": true,
+          "response": "{\n  \"skill\": \"skill5_api_enum\",\n  \"reasoning\": \"Using curl for skill5 api enum\",\n  \"tool_name\": \"curl\",\n  \"parameters\": {\n    \"url\": \"http://192.168.0.41:8006/openapi.json\"\n  },\n  \"is_complete\": false\n}"
+        },
+        {
+          "run": 2,
+          "extracted_tool": "curl",
+          "expected_tools": [
+            "curl"
+          ],
+          "correct": true,
+          "response": "{\n  \"skill\": \"skill5_api_enum\",\n  \"reasoning\": \"Using curl for skill5 api enum\",\n  \"tool_name\": \"curl\",\n  \"parameters\": {\n    \"url\": \"http://192.168.0.41:8006/openapi.json\"\n  },\n  \"is_complete\": false\n}"
+        },
+        {
+          "run": 3,
+          "extracted_tool": "curl",
+          "expected_tools": [
+            "curl"
+          ],
+          "correct": true,
+          "response": "{\n  \"skill\": \"skill5_api_enum\",\n  \"reasoning\": \"Using curl for skill5 api enum\",\n  \"tool_name\": \"curl\",\n  \"parameters\": {\n    \"url\": \"http://192.168.0.41:8006/openapi.json\"\n  },\n  \"is_complete\": false\n}"
+        }
+      ]
+    }
+  }
+}
