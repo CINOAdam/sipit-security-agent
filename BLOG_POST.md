@@ -248,10 +248,10 @@ security_agent/
 If you use this work, please cite:
 
 ```
-@misc{sipit-security-agent-2024,
+@misc{sipit-security-agent-2025,
   title={Behavioral Consistency in Fine-Tuned LLMs: When Probing Doesn't Predict Performance},
-  author={[Your Name]},
-  year={2024},
+  author={[Adam Kruger]},
+  year={2025},
   howpublished={GitHub}
 }
 ```
